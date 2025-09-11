@@ -7,8 +7,8 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## 👥 Membres de l’équipe
 
-- @NomMembre1  
-- @NomMembre2  
+- @Kennystflr
+- @louisvoz57700 
 - @NomMembre3  
 - @NomMembre4  
 - @NomMembre5  
