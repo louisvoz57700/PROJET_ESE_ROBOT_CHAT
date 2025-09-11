@@ -7,11 +7,11 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## 👥 Membres de l’équipe
 
-- @Kennystflr
-- @louisvoz57700 
-- @NomMembre3  
-- @NomMembre4  
-- @NomMembre5  
+- [Kenny Saint-Fleur](https://github.com/Kennystflr)  
+- [Louis Vozzola](https://github.com/louisvoz57700)  
+- [@NomMembre3](https://github.com/NomMembre3)  
+- [@NomMembre4](https://github.com/NomMembre4)  
+- [@NomMembre5](https://github.com/NomMembre5) 
 
 *(Ajoutez vos pseudos GitHub ou @Discord pour bien identifier chaque membre.)*
 
