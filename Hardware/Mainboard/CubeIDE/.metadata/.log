@@ -1,0 +1,39 @@
+!SESSION 2025-09-11 09:24:18.014 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-11 09:25:05.748
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-11 09:25:05.749
+!MESSAGE Log4j2 initialized with config file /home/knnstflr/git/PROJET_ESE_ROBOT_CHAT/Hardware/Mainboard/CubeIDE/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-11 09:25:07.784
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-11 10:01:45.928
+!MESSAGE Indexed 'Robot-chat' (35 sources, 103 headers) in 3.61 sec: 10,302 declarations; 75,533 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0023%)
+!SESSION 2025-09-12 10:36:52.398 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-12 10:37:06.312
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-12 10:37:06.313
+!MESSAGE Log4j2 initialized with config file /home/knnstflr/git/PROJET_ESE_ROBOT_CHAT/Hardware/Mainboard/CubeIDE/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-12 10:37:10.094
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-12 10:38:31.840
+!MESSAGE Indexed 'S2C_motorBoard' (39 sources, 139 headers) in 4.7 sec: 15,947 declarations; 87,437 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-12 10:45:26.047
+!MESSAGE Indexed 'Robot-Chat' (19 sources, 81 headers) in 2.76 sec: 4,752 declarations; 19,342 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0083%)
