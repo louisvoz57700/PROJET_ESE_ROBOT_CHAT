@@ -10,7 +10,7 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 - [Kenny Saint-Fleur](https://github.com/Kennystflr)  
 - [Louis Vozzola](https://github.com/louisvoz57700)  
 - [Antoine LEMARIGNIER](https://github.com/NomMembre3)  
-- [@NomMembre4](https://github.com/NomMembre4)  
+- [Thomas TERLINDEN](https://github.com/TTrld)  
 - [@NomMembre5](https://github.com/NomMembre5) 
 
 *(Ajoutez vos pseudos GitHub ou @Discord pour bien identifier chaque membre.)*
