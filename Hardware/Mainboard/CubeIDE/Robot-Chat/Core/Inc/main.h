@@ -70,6 +70,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ToF_nRST_Pin GPIO_PIN_13
+#define ToF_nRST_GPIO_Port GPIOC
 #define ENC2_A_Pin GPIO_PIN_0
 #define ENC2_A_GPIO_Port GPIOA
 #define ENC2_B_Pin GPIO_PIN_1
@@ -82,8 +84,12 @@ void Error_Handler(void);
 #define ACC_INT2_GPIO_Port GPIOB
 #define MOT1_REV_Pin GPIO_PIN_1
 #define MOT1_REV_GPIO_Port GPIOB
-#define ToF_nReset_Pin GPIO_PIN_6
-#define ToF_nReset_GPIO_Port GPIOC
+#define MOT2_Imes_Pin GPIO_PIN_2
+#define MOT2_Imes_GPIO_Port GPIOB
+#define BT_nRST_Pin GPIO_PIN_12
+#define BT_nRST_GPIO_Port GPIOB
+#define MOT1_Imes_Pin GPIO_PIN_15
+#define MOT1_Imes_GPIO_Port GPIOB
 #define ENC1_B_Pin GPIO_PIN_8
 #define ENC1_B_GPIO_Port GPIOA
 #define ENC1_A_Pin GPIO_PIN_9
