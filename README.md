@@ -11,7 +11,6 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 - [Louis Vozzola](https://github.com/louisvoz57700)  
 - [Antoine LEMARIGNIER](https://github.com/LEMARIGNIER-Antoine)  
 - [Thomas TERLINDEN](https://github.com/TTrld)  
-- [@NomMembre5](https://github.com/NomMembre5) 
 
 *(Ajoutez vos pseudos GitHub ou @Discord pour bien identifier chaque membre.)*
 
