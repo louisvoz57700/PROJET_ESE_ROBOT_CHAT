@@ -24,6 +24,9 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 - Documenter toutes les étapes du projet pour assurer sa **reproductibilité**.  
 
 ---
+## Schéma de Principe
+<img width="1336" height="904" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
+
 
 ## 🛠️ Technologies utilisées (prévisionnel)
 
