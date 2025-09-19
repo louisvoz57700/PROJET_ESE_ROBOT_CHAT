@@ -1,0 +1,105 @@
+(footprint "Interrupteur"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.025 -12.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d33c656e-cc76-49e3-8f61-32639d236af7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Interrupteur"
+		(at 0.025 -11.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "179f307c-52d2-41dd-826e-4c86a8335e17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.025 -12.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8a5471a-1218-425a-b2a2-fa91cabf7ff1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0.025 -12.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab698a03-bc26-482f-9bf1-23276f039575")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6.35 -3.3)
+		(end 6.35 3.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e7570b69-f419-4707-bab3-d510ed45ff9b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -8.425 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bd140290-2a83-4155-922c-4a52a2468e89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -4.7 0)
+		(size 2.5 2.5)
+		(drill 1.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5079524c-57cc-4d8a-8b21-d3900e2dff42")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(drill 1.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aed0955c-c34f-470e-9077-51422764716a")
+	)
+	(pad "3" thru_hole circle
+		(at 4.7 0)
+		(size 2.5 2.5)
+		(drill 1.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "48aeb4b7-777f-4545-8751-8acf16715b80")
+	)
+	(embedded_fonts no)
+)
