@@ -2043,131 +2043,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3VA"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3VA"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3VA_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3VA_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -2658,18 +2533,6 @@
 		(uuid 95d8df90-9bdb-45ac-a943-ef1ae3a5b07c)
 	)
 	(rectangle
-		(start 76.2 121.92)
-		(end 129.54 156.21)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 96bf9697-7ea5-4f04-86b7-2ced9145e22f)
-	)
-	(rectangle
 		(start 16.51 121.92)
 		(end 69.85 156.21)
 		(stroke
@@ -2751,18 +2614,6 @@
 		)
 		(uuid "4f359016-48cf-40b7-8500-a3f784e3cc66")
 	)
-	(text "LDO 3V3A\n\n"
-		(exclude_from_sim no)
-		(at 82.042 124.968 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "a08c4043-cc41-4458-a22a-b7940cf9ab37")
-	)
 	(text "SCHOTTKY OR with USBC VBUS\n"
 		(exclude_from_sim no)
 		(at 110.998 72.644 0)
@@ -2824,12 +2675,6 @@
 		(uuid "117b6fcc-d9c2-492d-9063-b2032f966294")
 	)
 	(junction
-		(at 95.25 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1506f6e8-722e-4473-a129-96987bf400cb")
-	)
-	(junction
 		(at 101.6 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2848,28 +2693,10 @@
 		(uuid "242cb92d-1633-4c95-b814-62f8ec1241cd")
 	)
 	(junction
-		(at 105.41 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2de540de-0902-4d1a-bfb5-e93718035d75")
-	)
-	(junction
 		(at 260.35 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3884f94c-4ca2-47e2-b148-eac5d1ae8dab")
-	)
-	(junction
-		(at 85.09 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e9e27f4-098c-4837-b708-241a9e377baf")
-	)
-	(junction
-		(at 105.41 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50064097-c209-49bf-b877-0fdb70689c31")
 	)
 	(junction
 		(at 104.14 83.82)
@@ -2882,18 +2709,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f2449d6-6997-4957-9fe8-88b25ea9cb17")
-	)
-	(junction
-		(at 45.72 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "608f5607-4d91-4180-86ee-f7ac62c60ca9")
-	)
-	(junction
-		(at 109.22 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67ae84c0-9d52-43bd-8cd0-a843131590dd")
 	)
 	(junction
 		(at 82.55 83.82)
@@ -2968,12 +2783,6 @@
 		(uuid "bca090e1-259b-4d47-8110-2d5412361c77")
 	)
 	(junction
-		(at 81.28 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0ce4296-2c63-4905-b841-07e530a61aeb")
-	)
-	(junction
 		(at 255.27 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3021,16 +2830,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 144.78) (xy 95.25 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "058a10d4-ea8f-48d5-b330-5a3d4999aa45")
-	)
-	(wire
-		(pts
 			(xy 121.92 83.82) (xy 123.19 83.82)
 		)
 		(stroke
@@ -3058,16 +2857,6 @@
 			(type default)
 		)
 		(uuid "071f050e-e00a-4a7b-a8de-11366f8ec632")
-	)
-	(wire
-		(pts
-			(xy 78.74 134.62) (xy 81.28 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0835e22c-8f2a-4103-82a7-3b181d672689")
 	)
 	(wire
 		(pts
@@ -3161,16 +2950,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 144.78) (xy 123.19 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b30972e-2f58-4155-b28b-01a13a6a953f")
-	)
-	(wire
-		(pts
 			(xy 104.14 92.71) (xy 104.14 91.44)
 		)
 		(stroke
@@ -3211,16 +2990,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 144.78) (xy 123.19 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28156f21-e240-477b-b6e8-a303a2b9eba9")
-	)
-	(wire
-		(pts
 			(xy 185.42 73.66) (xy 198.12 73.66)
 		)
 		(stroke
@@ -3228,16 +2997,6 @@
 			(type default)
 		)
 		(uuid "29e03fad-d297-4d39-a4f1-5d295156c538")
-	)
-	(wire
-		(pts
-			(xy 95.25 144.78) (xy 105.41 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b9eda83-4bf3-47d0-9213-cd759c4ec27d")
 	)
 	(wire
 		(pts
@@ -3361,16 +3120,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 142.24) (xy 81.28 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a37c173-f8ee-4460-b7f1-652cf65f91f0")
-	)
-	(wire
-		(pts
 			(xy 46.99 133.35) (xy 46.99 135.89)
 		)
 		(stroke
@@ -3421,16 +3170,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 134.62) (xy 123.19 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a6f94a0-774e-4c06-a24e-01fabdcc466e")
-	)
-	(wire
-		(pts
 			(xy 99.06 95.25) (xy 101.6 95.25)
 		)
 		(stroke
@@ -3468,16 +3207,6 @@
 			(type default)
 		)
 		(uuid "66563ca4-b8a0-4f49-9fa4-ae636d50633e")
-	)
-	(wire
-		(pts
-			(xy 123.19 134.62) (xy 123.19 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "669fc75c-9a22-4f8d-aa48-41bc9fc3e4c1")
 	)
 	(wire
 		(pts
@@ -3541,16 +3270,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 130.81) (xy 109.22 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73478f9d-eeb9-4382-8e44-d7ca6325b712")
-	)
-	(wire
-		(pts
 			(xy 50.8 133.35) (xy 54.61 133.35)
 		)
 		(stroke
@@ -3558,16 +3277,6 @@
 			(type default)
 		)
 		(uuid "73c1e385-1bfc-4273-9713-0cb7818b0016")
-	)
-	(wire
-		(pts
-			(xy 81.28 134.62) (xy 85.09 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73d59b70-9767-4881-b812-75db1452405e")
 	)
 	(wire
 		(pts
@@ -3621,16 +3330,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 144.78) (xy 95.25 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d73c604-1c5c-4ba0-accf-acbac3b18809")
-	)
-	(wire
-		(pts
 			(xy 186.69 83.82) (xy 198.12 83.82)
 		)
 		(stroke
@@ -3638,16 +3337,6 @@
 			(type default)
 		)
 		(uuid "7dc76bc6-badf-4fca-9077-0ed5256d08fe")
-	)
-	(wire
-		(pts
-			(xy 105.41 142.24) (xy 105.41 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fbc5ce3-5b15-4f9f-aaaa-e09659e10bdf")
 	)
 	(wire
 		(pts
@@ -4011,16 +3700,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 134.62) (xy 113.03 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d05feee4-953e-4829-83a1-dc0117127c2b")
-	)
-	(wire
-		(pts
 			(xy 92.71 90.17) (xy 88.9 90.17)
 		)
 		(stroke
@@ -4038,16 +3717,6 @@
 			(type default)
 		)
 		(uuid "d2bee3f3-7ba3-452c-9888-8f7fd3696df6")
-	)
-	(wire
-		(pts
-			(xy 45.72 101.6) (xy 45.72 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2dd9120-62e8-4d70-90f5-da8b07cbc401")
 	)
 	(wire
 		(pts
@@ -4181,16 +3850,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 134.62) (xy 85.09 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef22c395-3e2f-4390-a99d-3265981d807c")
-	)
-	(wire
-		(pts
 			(xy 186.69 86.36) (xy 198.12 86.36)
 		)
 		(stroke
@@ -4198,16 +3857,6 @@
 			(type default)
 		)
 		(uuid "f4d61c1d-980a-419d-96a6-685244bfdcb0")
-	)
-	(wire
-		(pts
-			(xy 105.41 134.62) (xy 109.22 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5922a74-7267-4405-b53c-369cd79c3267")
 	)
 	(wire
 		(pts
@@ -4251,16 +3900,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 134.62) (xy 81.28 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8c22e24-dfd3-4db3-943b-bf8334612c87")
-	)
-	(wire
-		(pts
 			(xy 185.42 71.12) (xy 198.12 71.12)
 		)
 		(stroke
@@ -4299,16 +3938,6 @@
 		)
 		(uuid "fc8b5b42-1625-4d13-b598-612134030ffc")
 	)
-	(wire
-		(pts
-			(xy 105.41 134.62) (xy 105.41 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffd5f4a8-a19c-4b1b-81ce-165ddb277922")
-	)
 	(symbol
 		(lib_id "Device:LED")
 		(at 64.77 138.43 90)
@@ -4318,7 +3947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01f3aa33-af50-4934-b548-41819a9dcf51")
-		(property "Reference" "D1"
+		(property "Reference" "D102"
 			(at 65.532 136.144 90)
 			(effects
 				(font
@@ -4372,7 +4001,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "D1")
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -4388,7 +4017,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04b76692-9d65-4808-9cc8-e89e6a7a1441")
-		(property "Reference" "L1"
+		(property "Reference" "L101"
 			(at 93.98 78.74 90)
 			(effects
 				(font
@@ -4404,7 +4033,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_APV_ANR5020"
 			(at 93.98 83.82 0)
 			(effects
 				(font
@@ -4440,7 +4069,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "L1")
+					(reference "L101")
 					(unit 1)
 				)
 			)
@@ -4456,7 +4085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "067bce92-36d9-4c04-87e6-3d508ff27f80")
-		(property "Reference" "R9"
+		(property "Reference" "R101"
 			(at 43.18 80.0099 0)
 			(effects
 				(font
@@ -4510,7 +4139,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R9")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -4525,7 +4154,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0758fb37-4546-4910-83fa-dd1f96474adf")
-		(property "Reference" "C11"
+		(property "Reference" "C111"
 			(at 114.3 87.6363 0)
 			(effects
 				(font
@@ -4579,7 +4208,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C11")
+					(reference "C111")
 					(unit 1)
 				)
 			)
@@ -4661,7 +4290,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25e0a5b1-0ebc-4db0-99b9-15c57f9267a7")
-		(property "Reference" "C12"
+		(property "Reference" "C102"
 			(at 22.86 81.2863 0)
 			(effects
 				(font
@@ -4715,7 +4344,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C12")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -4731,7 +4360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "381f201e-cbaa-44cc-810f-0e506a9a5daa")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR0101"
 			(at 20.32 137.16 0)
 			(effects
 				(font
@@ -4781,7 +4410,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR052")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -4797,7 +4426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3be52276-b6fb-4832-a07c-40bd36efb908")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR0113"
 			(at 88.9 116.84 0)
 			(effects
 				(font
@@ -4847,103 +4476,24 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR042")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:MCP1802x-xx02xOT")
-		(at 95.25 137.16 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 267.97 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "42813d81-4bc0-4836-a822-efb9692ff4e4")
-		(property "Reference" "BU33SD5WG-TR2"
-			(at 95.25 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM1117DT-3.3"
-			(at 95.25 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 88.9 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22053C.pdf"
-			(at 95.25 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c51a41e-652b-4ffe-8b93-8f9500f3b6ce")
-		)
-		(pin "3"
-			(uuid "42e9dde9-ca26-4b73-944e-0a41cc720218")
-		)
-		(pin "4"
-			(uuid "2186b7d1-562d-4905-93d7-112d4272ad98")
-		)
-		(pin "5"
-			(uuid "5e54a19b-e0da-40ee-b047-27c5ddd33d09")
-		)
-		(pin "2"
-			(uuid "364f96d2-c2c4-4e5f-bf9a-20be2b69a35e")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "BU33SD5WG-TR2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 81.28 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4d89b23f-20b7-43d8-be9d-12b62463e665")
-		(property "Reference" "C1"
-			(at 83.82 138.4363 0)
+		(uuid "4f98e6fd-83db-4d6b-8ed6-78a543b3cc67")
+		(property "Reference" "H104"
+			(at 270.51 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,17 +4501,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
-			(at 83.82 140.9763 0)
+		(property "Value" "MountingHole_Pad"
+			(at 270.51 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 81.28 139.7 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 267.97 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4970,7 +4521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 139.7 0)
+			(at 267.97 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,8 +4529,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 81.28 139.7 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 267.97 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,15 +4539,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c67b3fc-257f-4899-96fb-c1446bcd3800")
-		)
-		(pin "2"
-			(uuid "b4728815-f211-4b19-9989-2f4c1fd8a5ab")
+			(uuid "f097adb1-7c7c-4aad-b4b3-c1fbc383401b")
 		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C1")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -5012,7 +4560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5132998d-4197-4a5d-a980-c743599a348d")
-		(property "Reference" "C13"
+		(property "Reference" "C104"
 			(at 33.02 97.7963 0)
 			(effects
 				(font
@@ -5066,73 +4614,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 78.74 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52e97df7-e4dd-4c29-b039-55daba436969")
-		(property "Reference" "#PWR04"
-			(at 78.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 78.74 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 78.74 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ffedcdd4-1af4-4b4d-9114-f1ab1d150e85")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR04")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -5147,7 +4629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "546b2382-3b5c-4a2f-9ae2-5c2f3b28581e")
-		(property "Reference" "C14"
+		(property "Reference" "C107"
 			(at 85.09 80.0163 0)
 			(effects
 				(font
@@ -5201,7 +4683,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C14")
+					(reference "C107")
 					(unit 1)
 				)
 			)
@@ -5216,7 +4698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54ea55cc-0839-4a4f-b473-7721e2855407")
-		(property "Reference" "R3"
+		(property "Reference" "R103"
 			(at 56.896 132.08 0)
 			(effects
 				(font
@@ -5270,7 +4752,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R3")
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -5286,7 +4768,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "567b46c4-2917-41d0-bef5-973c11ea0c75")
-		(property "Reference" "SW2"
+		(property "Reference" "SW101"
 			(at 58.42 24.13 0)
 			(effects
 				(font
@@ -5302,7 +4784,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom:Interrupteur"
 			(at 58.42 33.02 0)
 			(effects
 				(font
@@ -5341,7 +4823,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "SW2")
+					(reference "SW101")
 					(unit 1)
 				)
 			)
@@ -5357,7 +4839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58210862-cb3d-4e82-a916-cc6f62775a20")
-		(property "Reference" "U5"
+		(property "Reference" "U101"
 			(at 60.96 71.12 0)
 			(effects
 				(font
@@ -5436,7 +4918,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "U5")
+					(reference "U101")
 					(unit 1)
 				)
 			)
@@ -5452,7 +4934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ab50ded-a6ec-4d91-b3f1-4a06db2c1d21")
-		(property "Reference" "D3"
+		(property "Reference" "D101"
 			(at 50.8 36.5124 90)
 			(effects
 				(font
@@ -5506,7 +4988,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "D3")
+					(reference "D101")
 					(unit 1)
 				)
 			)
@@ -5522,7 +5004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f4d570b-3e8b-46cd-9af5-547e5521d639")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0110"
 			(at 60.96 116.84 0)
 			(effects
 				(font
@@ -5572,7 +5054,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR038")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -5588,7 +5070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c29ce9f-bf77-4d3a-b111-5a59bd278aa3")
-		(property "Reference" "BT1"
+		(property "Reference" "BT101"
 			(at 30.48 38.7984 0)
 			(effects
 				(font
@@ -5642,7 +5124,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "BT1")
+					(reference "BT101")
 					(unit 1)
 				)
 			)
@@ -5658,7 +5140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dd1723c-df4e-4a1a-8e90-33ba88c9f85a")
-		(property "Reference" "C7"
+		(property "Reference" "C101"
 			(at 25.4 137.1663 0)
 			(effects
 				(font
@@ -5712,76 +5194,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 123.19 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f75814c-508c-4f95-81f6-fef189ff2de5")
-		(property "Reference" "D2"
-			(at 123.952 137.414 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "GR"
-			(at 124.714 140.462 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 123.19 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 123.19 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d2ac6de-2036-4769-99b2-e75b4dfea1a6")
-		)
-		(pin "2"
-			(uuid "8809b3fb-887f-4c2e-9722-887c9150c30b")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "D2")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -5797,7 +5210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "705a85b7-4a03-4dc4-94e5-83b804490a78")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR0104"
 			(at 35.56 110.49 0)
 			(effects
 				(font
@@ -5847,24 +5260,43 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR044")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3VA")
-		(at 109.22 130.81 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 251.46 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "70642250-67a8-4c19-9e26-480e1ff3c373")
-		(property "Reference" "#PWR020"
-			(at 109.22 134.62 0)
+		(uuid "70aa7c84-f59d-4539-9597-da88280111b8")
+		(property "Reference" "H102"
+			(at 254 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 254 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 251.46 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,16 +5304,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
-			(at 109.22 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 130.81 0)
+		(property "Datasheet" "~"
+			(at 251.46 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5889,17 +5313,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 109.22 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 109.22 130.81 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 251.46 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,12 +5323,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8d85e05f-7be3-454a-a6bb-105fb3ad95c4")
+			(uuid "0ca837b6-bc75-47bf-a79c-3951e9474b87")
 		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR020")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -5929,7 +5344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "731889b4-b3b0-42fc-9174-c355dd90c08a")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR0115"
 			(at 107.95 101.6 0)
 			(effects
 				(font
@@ -5980,7 +5395,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR041")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -5995,7 +5410,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "75d93d02-7611-40cb-8126-2c4842cc74c4")
+		(uuid "7c3d6d1e-c217-485a-b1ad-b1e78afb4062")
 		(property "Reference" "H103"
 			(at 262.89 146.0499 0)
 			(effects
@@ -6015,7 +5430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 			(at 260.35 148.59 0)
 			(effects
 				(font
@@ -6043,80 +5458,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d49c70f-5859-4fcf-a001-f6405ce8001d")
+			(uuid "bcbf8367-58f6-48fe-8261-06c528463325")
 		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
 					(reference "H103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 267.97 148.59 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b2e67cd-f8a3-4881-8258-563196baad9a")
-		(property "Reference" "H104"
-			(at 270.51 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 270.51 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom"
-			(at 267.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 267.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ca003af-bb61-4702-b484-67a156601075")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -6132,7 +5479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cdc2420-c436-4efb-b192-89cd45b682a4")
-		(property "Reference" "R14"
+		(property "Reference" "R102"
 			(at 43.18 97.7899 0)
 			(effects
 				(font
@@ -6186,7 +5533,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R14")
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -6202,7 +5549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "804bf626-09ef-411e-a52f-779ba0089e06")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0102"
 			(at 26.67 54.61 0)
 			(effects
 				(font
@@ -6252,7 +5599,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR037")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -6267,7 +5614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82324f48-be4d-487a-ab54-9d4eff018548")
-		(property "Reference" "R10"
+		(property "Reference" "R104"
 			(at 76.2 73.6599 90)
 			(effects
 				(font
@@ -6321,73 +5668,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 95.25 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c6a39cb-e4dd-4e5a-b83f-21f59b00d38c")
-		(property "Reference" "#PWR06"
-			(at 95.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 95.25 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e51ad7f3-9cf4-4d90-90c0-b8cdbf63ff73")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR06")
+					(reference "R104")
 					(unit 1)
 				)
 			)
@@ -6402,7 +5683,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ece841a-a022-48a2-8284-6e868c55bbf4")
-		(property "Reference" "C15"
+		(property "Reference" "C109"
 			(at 106.68 87.6363 0)
 			(effects
 				(font
@@ -6456,7 +5737,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C15")
+					(reference "C109")
 					(unit 1)
 				)
 			)
@@ -6472,7 +5753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "906f27ca-1d5d-4548-904b-0363b36661f4")
-		(property "Reference" "F1"
+		(property "Reference" "F101"
 			(at 34.29 26.67 90)
 			(effects
 				(font
@@ -6488,7 +5769,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom:2920L300"
 			(at 34.29 34.798 90)
 			(effects
 				(font
@@ -6524,7 +5805,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "F1")
+					(reference "F101")
 					(unit 1)
 				)
 			)
@@ -6540,7 +5821,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97502815-f4b0-4d48-8cd7-a5fb96fd7403")
-		(property "Reference" "R12"
+		(property "Reference" "R107"
 			(at 95.25 100.3301 90)
 			(effects
 				(font
@@ -6594,7 +5875,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R12")
+					(reference "R107")
 					(unit 1)
 				)
 			)
@@ -6609,7 +5890,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "979d537c-f28e-4aa4-80b9-5f8f641e5804")
-		(property "Reference" "R13"
+		(property "Reference" "R106"
 			(at 82.55 101.5999 0)
 			(effects
 				(font
@@ -6663,73 +5944,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 45.72 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b2b9370-dd56-4e83-89c9-23e9cf6e3f51")
-		(property "Reference" "#PWR039"
-			(at 45.72 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a630bc40-67ee-4112-93b0-6057d2571960")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR039")
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -6744,7 +5959,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c93c02e-4ee9-4bc8-a97c-8a63a08ffc93")
-		(property "Reference" "C16"
+		(property "Reference" "C108"
 			(at 99.822 89.154 90)
 			(effects
 				(font
@@ -6798,7 +6013,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C16")
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -6814,7 +6029,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d89779d-bc71-4114-be51-9cf717c6cbb4")
-		(property "Reference" "C10"
+		(property "Reference" "C103"
 			(at 31.75 81.2863 0)
 			(effects
 				(font
@@ -6868,7 +6083,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C10")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -6883,7 +6098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9dbc24b0-c2a5-4295-8bce-d089e95506db")
-		(property "Reference" "D6"
+		(property "Reference" "D103"
 			(at 118.4275 77.47 0)
 			(effects
 				(font
@@ -6935,7 +6150,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "D6")
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -6951,7 +6166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5addc1e-5676-48ba-b729-96c43a1db104")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR0109"
 			(at 50.8 133.35 0)
 			(effects
 				(font
@@ -7001,7 +6216,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR024")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -7016,7 +6231,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ae543441-173e-42cb-808a-70cf0ad993ca")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR0117"
 			(at 127 87.63 0)
 			(effects
 				(font
@@ -7067,7 +6282,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR043")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -7082,7 +6297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b13e8e93-b2e0-4978-ad9a-463aa56f63f8")
-		(property "Reference" "BU33SD5WG-TR1"
+		(property "Reference" "BU33SD5WG-TR101"
 			(at 36.83 126.365 0)
 			(effects
 				(font
@@ -7146,7 +6361,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "BU33SD5WG-TR1")
+					(reference "BU33SD5WG-TR101")
 					(unit 1)
 				)
 			)
@@ -7161,7 +6376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c107d35c-1928-47dd-82bf-5ca944cd6fac")
-		(property "Reference" "R11"
+		(property "Reference" "R105"
 			(at 82.55 90.1699 90)
 			(effects
 				(font
@@ -7215,7 +6430,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R11")
+					(reference "R105")
 					(unit 1)
 				)
 			)
@@ -7231,7 +6446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb528b94-20fa-409b-9939-b0e7b2e26924")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR0106"
 			(at 39.37 80.01 0)
 			(effects
 				(font
@@ -7281,7 +6496,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR036")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -7297,7 +6512,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7883a59-2ff6-484a-ae32-f3a726c443b3")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0111"
 			(at 74.93 33.02 0)
 			(effects
 				(font
@@ -7347,7 +6562,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR035")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -7382,7 +6597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 			(at 243.84 148.59 0)
 			(effects
 				(font
@@ -7431,7 +6646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de6c020e-0734-45e9-a8b8-c5d3ca5cd5e8")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0103"
 			(at 29.21 93.98 0)
 			(effects
 				(font
@@ -7481,78 +6696,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 105.41 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2b21101-6c12-4278-b7c4-977b6c1caf95")
-		(property "Reference" "C2"
-			(at 108.585 138.4363 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "1u"
-			(at 108.585 140.9763 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 105.41 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c650e53f-b007-4b3c-aa06-b4e1df0e4b97")
-		)
-		(pin "2"
-			(uuid "1fb9fc40-7f83-4f6d-b8b7-69724c897f72")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C2")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -7625,74 +6769,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 251.46 148.59 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e44fcfc5-b4e3-4b1d-825e-03b1a43cd65a")
-		(property "Reference" "H102"
-			(at 254 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 254 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom"
-			(at 251.46 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 251.46 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 251.46 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e4e87af-26f5-4d95-88d0-98d8a79487b6")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "H102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 36.83 146.05 0)
 		(unit 1)
@@ -7702,7 +6778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e57afdaa-cf65-4a5a-a5d8-c051a64f4fcb")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR0105"
 			(at 36.83 152.4 0)
 			(effects
 				(font
@@ -7752,7 +6828,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR010")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -7768,7 +6844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebe1183d-e74b-47be-8229-21366cc8eccb")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0118"
 			(at 255.27 160.02 0)
 			(effects
 				(font
@@ -7818,7 +6894,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR0103")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -7834,7 +6910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f00681ef-0317-402a-a2e4-c17380ff9aea")
-		(property "Reference" "C18"
+		(property "Reference" "C105"
 			(at 50.165 137.1663 0)
 			(effects
 				(font
@@ -7888,76 +6964,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 116.84 134.62 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f4d0acca-04ca-4aa5-a0de-ed0413c11940")
-		(property "Reference" "R5"
-			(at 115.316 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 118.11 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 116.84 136.398 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 116.84 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b97affb-be46-4c00-afa8-2e4de06114fa")
-		)
-		(pin "2"
-			(uuid "3c582836-a3ba-4283-96b0-0d02ba27f24e")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "R5")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -7973,7 +6980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdd339aa-762a-4d4c-8df4-d6fd9211114f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0108"
 			(at 48.26 54.61 0)
 			(effects
 				(font
@@ -8023,7 +7030,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
-					(reference "#PWR07")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)

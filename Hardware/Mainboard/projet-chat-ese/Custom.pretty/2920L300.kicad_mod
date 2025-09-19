@@ -1,0 +1,97 @@
+(footprint "2920L300"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.025 -9.875 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8a2bccf3-95e7-4f09-93e6-30920cd09217")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "2920L300"
+		(at 0.025 -8.375 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "01cbd593-2eae-4905-bc3d-3f44ae9c9fe5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/LFSI/LFSI-S-A0012713924/LFSI-S-A0013652082-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+		(at 0.025 -9.375 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83b1cfbe-06cf-4d72-bf94-d82a9cb0a019")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "eFuse"
+		(at 0.025 -9.375 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "38f86358-9c2d-4c68-9df8-0f357bc466a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.75 -3.025)
+		(end 4.55 2.975)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "31db893e-e797-4e6e-94e6-a8d0e0911412")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.025 -6.875 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3612fa19-9bc0-42c1-af10-556265c3fa52")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.3 0)
+		(size 2 5.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "c0237ae8-f71a-49b0-b574-7a3623b23e80")
+	)
+	(pad "2" smd roundrect
+		(at 3.2 0)
+		(size 2 5.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "0155426c-cd7e-4902-9711-a3611dfe3153")
+	)
+	(embedded_fonts no)
+)

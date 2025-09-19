@@ -2317,7 +2317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0747a649-95bf-4cd9-8a91-47c71a5c85b2")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR0503"
 			(at 44.45 50.8 0)
 			(effects
 				(font
@@ -2367,7 +2367,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0501")
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
@@ -2383,7 +2383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d6b45be-d8a1-465f-a6bb-f6709dfe9359")
-		(property "Reference" "#PWR0509"
+		(property "Reference" "#PWR0520"
 			(at 177.8 76.2 0)
 			(effects
 				(font
@@ -2433,7 +2433,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0509")
+					(reference "#PWR0520")
 					(unit 1)
 				)
 			)
@@ -2449,7 +2449,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fc49cd9-667f-41f7-b729-b0e133d8e1c3")
-		(property "Reference" "U4"
+		(property "Reference" "U501"
 			(at 59.2933 48.26 0)
 			(effects
 				(font
@@ -2569,7 +2569,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "U4")
+					(reference "U501")
 					(unit 1)
 				)
 			)
@@ -2584,7 +2584,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "135294ec-64dc-495b-9a51-8c9400ddf1b3")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0506"
 			(at 57.15 109.22 0)
 			(effects
 				(font
@@ -2634,7 +2634,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR033")
+					(reference "#PWR0506")
 					(unit 1)
 				)
 			)
@@ -2649,7 +2649,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13c41041-aae9-4bd6-8181-b4fb4859b201")
-		(property "Reference" "R510"
+		(property "Reference" "R508"
 			(at 157.48 81.2799 0)
 			(effects
 				(font
@@ -2667,7 +2667,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 160.02 82.55 0)
 			(effects
 				(font
@@ -2703,7 +2703,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R510")
+					(reference "R508")
 					(unit 1)
 				)
 			)
@@ -2718,7 +2718,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16c2b01b-51e4-4a4b-9927-3097e641f030")
-		(property "Reference" "R507"
+		(property "Reference" "R511"
 			(at 168.91 55.8799 0)
 			(effects
 				(font
@@ -2736,7 +2736,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 57.15 0)
 			(effects
 				(font
@@ -2772,7 +2772,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R507")
+					(reference "R511")
 					(unit 1)
 				)
 			)
@@ -2788,7 +2788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ab737b0-6e9c-4ed9-bb52-42d484c81fca")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR0514"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -2838,7 +2838,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR058")
+					(reference "#PWR0514")
 					(unit 1)
 				)
 			)
@@ -2853,7 +2853,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21bfe68f-436e-4dfd-a510-ec085381d227")
-		(property "Reference" "R506"
+		(property "Reference" "R509"
 			(at 158.75 55.8799 0)
 			(effects
 				(font
@@ -2871,7 +2871,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 161.29 57.15 0)
 			(effects
 				(font
@@ -2907,7 +2907,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R506")
+					(reference "R509")
 					(unit 1)
 				)
 			)
@@ -2923,7 +2923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2287cad6-ceb1-4e61-983c-c1999b54c882")
-		(property "Reference" "#PWR0508"
+		(property "Reference" "#PWR0522"
 			(at 179.07 60.96 0)
 			(effects
 				(font
@@ -2973,7 +2973,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0508")
+					(reference "#PWR0522")
 					(unit 1)
 				)
 			)
@@ -2989,7 +2989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b73dbd5-2ebf-45e9-9eac-bd4292fbec39")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR0505"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -3039,7 +3039,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR034")
+					(reference "#PWR0505")
 					(unit 1)
 				)
 			)
@@ -3055,7 +3055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53a833cb-237a-461a-a41f-045dd27f2aeb")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR0518"
 			(at 171.45 57.15 0)
 			(effects
 				(font
@@ -3105,7 +3105,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0507")
+					(reference "#PWR0518")
 					(unit 1)
 				)
 			)
@@ -3121,7 +3121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65362340-dc74-4ebd-83d6-6601be5934ff")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR0510"
 			(at 124.46 57.15 0)
 			(effects
 				(font
@@ -3171,7 +3171,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0505")
+					(reference "#PWR0510")
 					(unit 1)
 				)
 			)
@@ -3187,7 +3187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7295ff40-fa28-436a-a95c-caf309a625a7")
-		(property "Reference" "#PWR0512"
+		(property "Reference" "#PWR0513"
 			(at 130.81 86.36 0)
 			(effects
 				(font
@@ -3237,7 +3237,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0512")
+					(reference "#PWR0513")
 					(unit 1)
 				)
 			)
@@ -3253,7 +3253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7de9bf7a-9a9b-4774-949e-8b8df2ae921f")
-		(property "Reference" "J501"
+		(property "Reference" "J504"
 			(at 187.96 62.2299 0)
 			(effects
 				(font
@@ -3313,7 +3313,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "J501")
+					(reference "J504")
 					(unit 1)
 				)
 			)
@@ -3328,7 +3328,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84ebf631-5377-49b9-939e-c6c3ea08eedc")
-		(property "Reference" "R509"
+		(property "Reference" "R506"
 			(at 120.65 81.2799 0)
 			(effects
 				(font
@@ -3346,7 +3346,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 123.19 82.55 0)
 			(effects
 				(font
@@ -3382,7 +3382,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R509")
+					(reference "R506")
 					(unit 1)
 				)
 			)
@@ -3397,7 +3397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8554220c-e412-4612-bd0a-867cdd2492e7")
-		(property "Reference" "R503"
+		(property "Reference" "R502"
 			(at 38.1 67.3099 0)
 			(effects
 				(font
@@ -3415,7 +3415,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 40.64 68.58 0)
 			(effects
 				(font
@@ -3451,7 +3451,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R503")
+					(reference "R502")
 					(unit 1)
 				)
 			)
@@ -3467,7 +3467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "878f39c0-82ac-46cc-bef1-b9f17be22402")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR0502"
 			(at 40.64 68.58 0)
 			(effects
 				(font
@@ -3517,7 +3517,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0503")
+					(reference "#PWR0502")
 					(unit 1)
 				)
 			)
@@ -3533,7 +3533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "890d8e0f-db92-46e9-8cdb-d55b7585ea11")
-		(property "Reference" "#PWR0517"
+		(property "Reference" "#PWR0519"
 			(at 176.53 101.6 0)
 			(effects
 				(font
@@ -3583,7 +3583,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0517")
+					(reference "#PWR0519")
 					(unit 1)
 				)
 			)
@@ -3598,7 +3598,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "948cb500-f61f-416a-b61a-36274477dfb7")
-		(property "Reference" "R502"
+		(property "Reference" "R501"
 			(at 29.21 53.3399 0)
 			(effects
 				(font
@@ -3616,7 +3616,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 31.75 54.61 0)
 			(effects
 				(font
@@ -3652,7 +3652,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R502")
+					(reference "R501")
 					(unit 1)
 				)
 			)
@@ -3668,7 +3668,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1f91b6b-339c-40bc-8bfc-e41378d44d7d")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR0501"
 			(at 31.75 54.61 0)
 			(effects
 				(font
@@ -3718,7 +3718,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0502")
+					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -3733,7 +3733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a37cc6dc-04bf-40fb-9bd6-64c8af78120f")
-		(property "Reference" "R508"
+		(property "Reference" "R504"
 			(at 110.49 81.2799 0)
 			(effects
 				(font
@@ -3751,7 +3751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 113.03 82.55 0)
 			(effects
 				(font
@@ -3787,7 +3787,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R508")
+					(reference "R504")
 					(unit 1)
 				)
 			)
@@ -3803,7 +3803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3a04886-9eca-4953-9e52-1ef681f9d017")
-		(property "Reference" "#PWR0511"
+		(property "Reference" "#PWR0509"
 			(at 123.19 82.55 0)
 			(effects
 				(font
@@ -3853,7 +3853,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0511")
+					(reference "#PWR0509")
 					(unit 1)
 				)
 			)
@@ -3869,7 +3869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a630709a-0f7b-466a-876e-e255d0137dbb")
-		(property "Reference" "#PWR0514"
+		(property "Reference" "#PWR0515"
 			(at 160.02 82.55 0)
 			(effects
 				(font
@@ -3919,7 +3919,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0514")
+					(reference "#PWR0515")
 					(unit 1)
 				)
 			)
@@ -3935,7 +3935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a84ca0f7-ddc0-4e03-a173-557cf1f33bd7")
-		(property "Reference" "#PWR0513"
+		(property "Reference" "#PWR0511"
 			(at 129.54 101.6 0)
 			(effects
 				(font
@@ -3985,7 +3985,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0513")
+					(reference "#PWR0511")
 					(unit 1)
 				)
 			)
@@ -4000,7 +4000,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a891fc39-0df3-4a5f-8ada-e9ae415da7a4")
-		(property "Reference" "R504"
+		(property "Reference" "R505"
 			(at 111.76 55.8799 0)
 			(effects
 				(font
@@ -4018,7 +4018,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 114.3 57.15 0)
 			(effects
 				(font
@@ -4054,7 +4054,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R504")
+					(reference "R505")
 					(unit 1)
 				)
 			)
@@ -4070,7 +4070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aff117fc-78cd-42a3-86dc-c0c45f5d3006")
-		(property "Reference" "#PWR0510"
+		(property "Reference" "#PWR0507"
 			(at 113.03 82.55 0)
 			(effects
 				(font
@@ -4120,7 +4120,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0510")
+					(reference "#PWR0507")
 					(unit 1)
 				)
 			)
@@ -4136,7 +4136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0d72068-b7cc-4278-b99b-015697a78c3f")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR0508"
 			(at 114.3 57.15 0)
 			(effects
 				(font
@@ -4186,7 +4186,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0504")
+					(reference "#PWR0508")
 					(unit 1)
 				)
 			)
@@ -4202,7 +4202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7403b75-f6e1-456d-99a6-c269d7626a67")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR0512"
 			(at 130.81 76.2 0)
 			(effects
 				(font
@@ -4252,7 +4252,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR021")
+					(reference "#PWR0512")
 					(unit 1)
 				)
 			)
@@ -4267,7 +4267,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3ff9ee4-44a9-48d0-bce3-3a96000a316f")
-		(property "Reference" "R501"
+		(property "Reference" "R503"
 			(at 41.91 49.5299 0)
 			(effects
 				(font
@@ -4285,7 +4285,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 44.45 50.8 0)
 			(effects
 				(font
@@ -4321,7 +4321,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R501")
+					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -4337,7 +4337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c42484da-872d-4c48-adf0-7407daec9d7d")
-		(property "Reference" "J502"
+		(property "Reference" "J501"
 			(at 139.7 87.6299 0)
 			(effects
 				(font
@@ -4397,7 +4397,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "J502")
+					(reference "J501")
 					(unit 1)
 				)
 			)
@@ -4413,7 +4413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf07458b-804a-40af-aba1-baf74243c2c3")
-		(property "Reference" "#PWR0516"
+		(property "Reference" "#PWR0521"
 			(at 177.8 86.36 0)
 			(effects
 				(font
@@ -4463,7 +4463,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0516")
+					(reference "#PWR0521")
 					(unit 1)
 				)
 			)
@@ -4479,7 +4479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0af9c39-1983-4f66-a313-5042c5098719")
-		(property "Reference" "J1"
+		(property "Reference" "J502"
 			(at 140.97 62.2299 0)
 			(effects
 				(font
@@ -4539,7 +4539,7 @@
 		(instances
 			(project ""
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "J1")
+					(reference "J502")
 					(unit 1)
 				)
 			)
@@ -4554,7 +4554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d54c6696-ecc0-4b04-9647-ed0f53a874d0")
-		(property "Reference" "R511"
+		(property "Reference" "R510"
 			(at 167.64 81.2799 0)
 			(effects
 				(font
@@ -4572,7 +4572,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 170.18 82.55 0)
 			(effects
 				(font
@@ -4608,7 +4608,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R511")
+					(reference "R510")
 					(unit 1)
 				)
 			)
@@ -4623,7 +4623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8c5338b-b7d1-490b-b480-6fda785d2e7a")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0504"
 			(at 44.45 96.52 0)
 			(effects
 				(font
@@ -4673,7 +4673,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR032")
+					(reference "#PWR0504")
 					(unit 1)
 				)
 			)
@@ -4689,7 +4689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfb75d36-a7d6-4596-b90f-dfd1b6da113b")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR0516"
 			(at 161.29 57.15 0)
 			(effects
 				(font
@@ -4739,7 +4739,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0506")
+					(reference "#PWR0516")
 					(unit 1)
 				)
 			)
@@ -4754,7 +4754,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ecbb5950-3e11-4d2d-820e-9883dede649e")
-		(property "Reference" "R505"
+		(property "Reference" "R507"
 			(at 121.92 55.8799 0)
 			(effects
 				(font
@@ -4772,7 +4772,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 57.15 0)
 			(effects
 				(font
@@ -4808,7 +4808,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "R505")
+					(reference "R507")
 					(unit 1)
 				)
 			)
@@ -4900,7 +4900,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8704755-d041-4c51-82bd-cfa571ea4c47")
-		(property "Reference" "#PWR0515"
+		(property "Reference" "#PWR0517"
 			(at 170.18 82.55 0)
 			(effects
 				(font
@@ -4950,7 +4950,7 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/c2a3b25f-abce-4e15-ba8b-7465203324d1"
-					(reference "#PWR0515")
+					(reference "#PWR0517")
 					(unit 1)
 				)
 			)
