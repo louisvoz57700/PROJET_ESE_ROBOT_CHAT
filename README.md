@@ -7,7 +7,7 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## 👥 Membres de l’équipe
 
-- [Kenny Saint-Fleur](https://github.com/Kennystflr)  
+- [Kenny Saint Fleur](https://github.com/Kennystflr)  
 - [Louis Vozzola](https://github.com/louisvoz57700)  
 - [Antoine LEMARIGNIER](https://github.com/LEMARIGNIER-Antoine)  
 - [Thomas TERLINDEN](https://github.com/TTrld)  
