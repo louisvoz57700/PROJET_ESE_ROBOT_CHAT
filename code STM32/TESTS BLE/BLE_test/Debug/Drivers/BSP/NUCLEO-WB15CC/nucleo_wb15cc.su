@@ -1,0 +1,16 @@
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:539:22:LL_AHB2_GRP1_EnableClock	24	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:146:10:BSP_GetVersion	4	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:164:9:BSP_LED_Init	40	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:193:9:BSP_LED_DeInit	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:213:9:BSP_LED_On	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:229:9:BSP_LED_Off	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:245:9:BSP_LED_Toggle	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:261:9:BSP_LED_GetState	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:288:9:BSP_PB_Init	40	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:336:9:BSP_PB_DeInit	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:353:9:BSP_PB_GetState	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:367:6:BSP_PB_IRQHandler	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:381:13:BSP_PB_Callback	16	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:640:13:BUTTON_SW1_EXTI_Callback	8	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:649:13:BUTTON_SW2_EXTI_Callback	8	static
+../Drivers/BSP/NUCLEO-WB15CC/nucleo_wb15cc.c:658:13:BUTTON_SW3_EXTI_Callback	8	static

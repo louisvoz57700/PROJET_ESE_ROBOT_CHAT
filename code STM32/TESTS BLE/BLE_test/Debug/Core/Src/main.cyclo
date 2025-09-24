@@ -1,0 +1,6 @@
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:1679:22:LL_RCC_LSE_SetDriveCapability	1
+../Core/Src/main.c:62:5:__io_putchar	1
+../Core/Src/main.c:72:5:main	1
+../Core/Src/main.c:143:6:SystemClock_Config	3
+../Core/Src/main.c:199:6:PeriphCommonClock_Config	2
+../Core/Src/main.c:227:6:Error_Handler	1
