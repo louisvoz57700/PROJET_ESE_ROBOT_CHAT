@@ -542,7 +542,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "ZXBM5210-SP-13"
+			(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIODS20676/DIODS20676-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
 				(at -0.254 3.556 0)
 				(effects
 					(font
@@ -721,6 +721,25 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -10.16 90)
+					(length 1.27)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3172,6 +3191,9 @@
 		)
 		(pin "5"
 			(uuid "e74eeb6c-044f-470b-82c8-ab99a0c8a94b")
+		)
+		(pin "9"
+			(uuid "00767f80-7158-447a-af64-e3cc6962a732")
 		)
 		(instances
 			(project "projet-chat-ese"
