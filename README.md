@@ -59,4 +59,18 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 ## 📌 Notes
 
 - Toute contribution doit passer par une **pull request**.  
-- Merci de respecter la **convention de nommage** et le style de code défini par l’équipe.  
+- Merci de respecter la **convention de nommage** et le style de code défini par l’équipe.
+
+---
+
+## Résumé des séances :
+### Séance du 19 / 09 :
+
+- Nous avons continuer les PCB (G431 et WB55) et fait le schéma de principe
+- Prise en main du capteur LIDAR
+
+### Séance du 23 / 09 :
+
+- Nous avons finis les PCB (Routage + Schematic) avec vérification du professeur
+- Fais la 3D sur le robot avec intégration des capteurs TOF
+
