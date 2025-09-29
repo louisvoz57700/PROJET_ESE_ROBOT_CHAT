@@ -46,12 +46,11 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## ✅ To-Do List
 
-- [ ] Définir le cahier des charges  
-- [ ] Choisir le matériel et les composants  
-- [ ] Développer le code de base  
-- [ ] Implémenter la communication robot ↔ utilisateur  
-- [ ] Tester et corriger les erreurs  
-- [ ] Rédiger la documentation finale  
+- [ ] algo de prise de decision
+- [ ] LIDAR
+- [ ] app bluetooth
+- [ ] Compréhension de tout les capteurs
+
 
 ---
 
