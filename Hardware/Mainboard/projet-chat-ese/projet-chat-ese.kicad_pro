@@ -193,6 +193,7 @@
       ],
       "track_widths": [
         0.0,
+        0.4,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -227,8 +228,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.3,
-          "drill": 0.15
+          "diameter": 0.45,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -493,7 +494,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.4,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       }

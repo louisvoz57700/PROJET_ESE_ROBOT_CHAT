@@ -1,0 +1,11 @@
+../Core/Src/driver_adxl345_interface.c:54:9:adxl345_interface_iic_init	1
+../Core/Src/driver_adxl345_interface.c:66:9:adxl345_interface_iic_deinit	1
+../Core/Src/driver_adxl345_interface.c:82:9:adxl345_interface_iic_read	1
+../Core/Src/driver_adxl345_interface.c:104:9:adxl345_interface_iic_write	1
+../Core/Src/driver_adxl345_interface.c:119:9:adxl345_interface_spi_init	1
+../Core/Src/driver_adxl345_interface.c:132:9:adxl345_interface_spi_deinit	1
+../Core/Src/driver_adxl345_interface.c:147:9:adxl345_interface_spi_read	1
+../Core/Src/driver_adxl345_interface.c:165:9:adxl345_interface_spi_write	1
+../Core/Src/driver_adxl345_interface.c:178:6:adxl345_interface_delay_ms	1
+../Core/Src/driver_adxl345_interface.c:188:6:adxl345_interface_debug_print	1
+../Core/Src/driver_adxl345_interface.c:198:6:adxl345_interface_receive_callback	9

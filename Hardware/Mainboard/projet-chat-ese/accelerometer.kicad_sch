@@ -894,7 +894,7 @@
 		(at 97.79 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b9812e14-0e83-4b0c-abeb-f543f122ce84")
+		(uuid "dd067aa7-d9eb-4187-85a8-62e7515ef0da")
 	)
 	(no_connect
 		(at 177.8 95.25)
@@ -946,16 +946,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 87.63) (xy 106.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81a21825-8709-49c3-91db-d7c626995539")
-	)
-	(wire
-		(pts
 			(xy 185.42 102.87) (xy 177.8 102.87)
 		)
 		(stroke
@@ -1003,6 +993,16 @@
 			(type default)
 		)
 		(uuid "bd00e0ae-4061-4688-b47e-ec9deefd3caa")
+	)
+	(wire
+		(pts
+			(xy 97.79 87.63) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4294d1-6d68-4933-8d62-cae0457b6813")
 	)
 	(wire
 		(pts
@@ -1346,7 +1346,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 95.25 105.41 0)
+		(at 97.79 90.17 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1355,7 +1355,7 @@
 		(dnp no)
 		(uuid "76ab8931-7bd4-4892-8394-5ed8b712319f")
 		(property "Reference" "C301"
-			(at 92.71 104.1462 0)
+			(at 95.25 88.9062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1364,7 +1364,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 92.71 106.6862 0)
+			(at 95.25 91.4462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,7 +1373,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 95.25 105.41 0)
+			(at 97.79 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1382,7 +1382,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 105.41 0)
+			(at 97.79 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1391,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 95.25 105.41 0)
+			(at 97.79 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1522,7 +1522,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 97.79 90.17 0)
+		(at 95.25 105.41 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1531,7 +1531,7 @@
 		(dnp no)
 		(uuid "9452143c-7e7c-4fd3-8907-fb34f1daa265")
 		(property "Reference" "C302"
-			(at 95.25 88.9062 0)
+			(at 92.71 104.1462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,7 +1540,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 95.25 91.4462 0)
+			(at 92.71 106.6862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1549,7 +1549,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 97.79 90.17 0)
+			(at 95.25 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1558,7 +1558,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 90.17 0)
+			(at 95.25 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1567,7 +1567,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 97.79 90.17 0)
+			(at 95.25 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -28,17 +28,6 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g4xx_hal.h"
-#include "stm32g4xx_ll_ucpd.h"
-#include "stm32g4xx_ll_bus.h"
-#include "stm32g4xx_ll_cortex.h"
-#include "stm32g4xx_ll_rcc.h"
-#include "stm32g4xx_ll_system.h"
-#include "stm32g4xx_ll_utils.h"
-#include "stm32g4xx_ll_pwr.h"
-#include "stm32g4xx_ll_gpio.h"
-#include "stm32g4xx_ll_dma.h"
-
-#include "stm32g4xx_ll_exti.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -92,10 +81,14 @@ void Error_Handler(void);
 #define ENC2_B_GPIO_Port GPIOA
 #define ENC2_A_Pin GPIO_PIN_9
 #define ENC2_A_GPIO_Port GPIOA
+#define BT_Config_Pin GPIO_PIN_10
+#define BT_Config_GPIO_Port GPIOA
 #define BT_nRST_Pin GPIO_PIN_10
 #define BT_nRST_GPIO_Port GPIOC
 #define MOT1_REV_Pin GPIO_PIN_5
 #define MOT1_REV_GPIO_Port GPIOB
+#define Lidar_Speed_PWM_Pin GPIO_PIN_6
+#define Lidar_Speed_PWM_GPIO_Port GPIOB
 #define MOT1_FW__Pin GPIO_PIN_7
 #define MOT1_FW__GPIO_Port GPIOB
 
