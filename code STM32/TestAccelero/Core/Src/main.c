@@ -17,6 +17,7 @@
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <adxl345_accelero.h>
 #include "main.h"
 #include "spi.h"
 #include "usart.h"
@@ -24,7 +25,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "driver_adxl345_fifo.h"
 
 
 /* USER CODE END Includes */
@@ -123,7 +123,13 @@ int main(void)
 	HAL_SPI_Receive(&hspi3, &buf, 1, SPI_TIMEOUT);
 	HAL_GPIO_WritePin(nCS_GPIO_Port, nCS_Pin, 1);
 
-	printf("%x \n\r",buf);
+
+	res = gpio_interrupt_init(adxl345_fifo_irq_handler);
+	if (res != 0)
+	{
+	    return 1;
+	}
+
 	res = adxl345_fifo_init(ADXL345_INTERFACE_SPI, ADXL345_ADDRESS_ALT_0, ACC_fifo_callback);
 	if (res != 0)
 	{
@@ -139,6 +145,17 @@ int main(void)
 		printf("Good !\n\r");
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 		HAL_Delay(1000);
+		// Dans une boucle ou une autre tâche, récupérer les données
+		ADXL345_AxesData axes = ADXL345_GetAxesData();
+		printf("Roll: %.2f°, Pitch: %.2f°\n", axes.roll, axes.pitch);
+
+		ADXL345_TapData taps = ADXL345_GetTapData();
+		if (taps.single_tap_detected) {
+		    printf("Single tap!\n");
+		}
+		if (taps.double_tap_detected) {
+		    printf("Double tap!\n");
+		}
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

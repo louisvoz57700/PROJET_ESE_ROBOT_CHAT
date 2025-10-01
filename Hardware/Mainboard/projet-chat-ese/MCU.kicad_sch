@@ -4413,12 +4413,6 @@
 		(uuid "ea21ab3f-f7aa-4819-b525-285cabc978f4")
 	)
 	(junction
-		(at 207.01 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0187695b-83b6-4599-b909-8df38cbb7bea")
-	)
-	(junction
 		(at 252.73 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4593,10 +4587,6 @@
 	(no_connect
 		(at 266.7 137.16)
 		(uuid "0dd83dde-ef6a-442c-9f71-6a768bebadfd")
-	)
-	(no_connect
-		(at 72.39 97.79)
-		(uuid "1445ae6c-e11b-435b-92e0-03b3a47a25aa")
 	)
 	(no_connect
 		(at 266.7 144.78)
@@ -5088,7 +5078,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 99.06) (xy 208.28 99.06)
+			(xy 194.31 99.06) (xy 208.28 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5258,16 +5248,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 101.6) (xy 207.01 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "527a8d35-cf54-4c40-9f06-bed76e630016")
-	)
-	(wire
-		(pts
 			(xy 252.73 151.13) (xy 251.46 151.13)
 		)
 		(stroke
@@ -5285,6 +5265,16 @@
 			(type default)
 		)
 		(uuid "5516f5e3-f618-4fd9-8a93-57451000c188")
+	)
+	(wire
+		(pts
+			(xy 59.69 97.79) (xy 72.39 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58134697-9da5-478c-9114-576d67161fb2")
 	)
 	(wire
 		(pts
@@ -5495,16 +5485,6 @@
 			(type default)
 		)
 		(uuid "7e5f8a9d-86d6-4476-93c8-519112d812a4")
-	)
-	(wire
-		(pts
-			(xy 208.28 101.6) (xy 207.01 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82413e55-991f-40d6-88de-cac9af51c44d")
 	)
 	(polyline
 		(pts
@@ -6128,6 +6108,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 101.6) (xy 208.28 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24d21d4-a607-4562-8bbd-2e20a3857859")
+	)
+	(wire
+		(pts
 			(xy 46.99 58.42) (xy 43.18 58.42)
 		)
 		(stroke
@@ -6266,6 +6256,16 @@
 		)
 		(uuid "70af65f2-772b-4941-9dee-75b4fb25d4f6")
 	)
+	(label "Lidar_speed"
+		(at 194.31 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80d1b72d-eff7-4319-bc56-336fc2185161")
+	)
 	(label "NRST"
 		(at 55.88 49.53 0)
 		(effects
@@ -6295,6 +6295,16 @@
 			(justify left bottom)
 		)
 		(uuid "9db53802-dd4a-4509-8180-a8f3d52d02a2")
+	)
+	(label "Lidar_speed"
+		(at 59.69 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "acf33810-6c60-4f56-88e0-f2996db00f92")
 	)
 	(label "USB_DN"
 		(at 119.38 72.39 180)
@@ -6327,7 +6337,7 @@
 		(uuid "c80872ad-af1a-4b50-95d1-d61794db7ef0")
 	)
 	(label "UART1_Rx"
-		(at 196.85 99.06 0)
+		(at 194.31 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)

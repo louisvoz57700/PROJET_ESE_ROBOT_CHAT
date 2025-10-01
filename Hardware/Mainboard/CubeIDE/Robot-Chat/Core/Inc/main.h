@@ -87,6 +87,8 @@ void Error_Handler(void);
 #define BT_nRST_GPIO_Port GPIOC
 #define MOT1_REV_Pin GPIO_PIN_5
 #define MOT1_REV_GPIO_Port GPIOB
+#define Lidar_Speed_PWM_Pin GPIO_PIN_6
+#define Lidar_Speed_PWM_GPIO_Port GPIOB
 #define MOT1_FW__Pin GPIO_PIN_7
 #define MOT1_FW__GPIO_Port GPIOB
 
