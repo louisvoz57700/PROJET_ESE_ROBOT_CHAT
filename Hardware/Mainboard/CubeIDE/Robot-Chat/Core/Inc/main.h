@@ -81,6 +81,8 @@ void Error_Handler(void);
 #define ENC2_B_GPIO_Port GPIOA
 #define ENC2_A_Pin GPIO_PIN_9
 #define ENC2_A_GPIO_Port GPIOA
+#define BT_Config_Pin GPIO_PIN_10
+#define BT_Config_GPIO_Port GPIOA
 #define BT_nRST_Pin GPIO_PIN_10
 #define BT_nRST_GPIO_Port GPIOC
 #define MOT1_REV_Pin GPIO_PIN_5
