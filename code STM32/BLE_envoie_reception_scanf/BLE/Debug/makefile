@@ -71,8 +71,8 @@ all: main-build
 main-build: BLE.elf secondary-outputs
 
 # Tool invocations
-BLE.elf BLE.map: $(OBJS) $(USER_OBJS) C:\Users\Antle\Downloads\PROJET_ESE_ROBOT_CHAT-main\PROJET_ESE_ROBOT_CHAT-main\code\ STM32\TESTS\ BLE\BLE_test\STM32WB15CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BLE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Antle\Downloads\PROJET_ESE_ROBOT_CHAT-main\PROJET_ESE_ROBOT_CHAT-main\code STM32\TESTS BLE\BLE_test\STM32WB15CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BLE.elf BLE.map: $(OBJS) $(USER_OBJS) C:\Users\ombeline\Documents\cours\gitprojet\PROJET_ESE_ROBOT_CHAT\code\ STM32\BLE_envoie_reception_scanf\BLE\STM32WB15CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BLE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\ombeline\Documents\cours\gitprojet\PROJET_ESE_ROBOT_CHAT\code STM32\BLE_envoie_reception_scanf\BLE\STM32WB15CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

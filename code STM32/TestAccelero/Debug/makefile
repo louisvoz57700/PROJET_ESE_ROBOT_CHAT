@@ -60,8 +60,8 @@ all: main-build
 main-build: TestAccelero.elf secondary-outputs
 
 # Tool invocations
-TestAccelero.elf TestAccelero.map: $(OBJS) $(USER_OBJS) C:\Users\knn64\STM32CubeIDE\workspace_1.15.1\TestAccelero\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TestAccelero.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\knn64\STM32CubeIDE\workspace_1.15.1\TestAccelero\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestAccelero.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+TestAccelero.elf TestAccelero.map: $(OBJS) $(USER_OBJS) /Users/kennystflr/repos/PROJET_ESE_ROBOT_CHAT/code\ STM32/TestAccelero/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TestAccelero.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/kennystflr/repos/PROJET_ESE_ROBOT_CHAT/code STM32/TestAccelero/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestAccelero.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

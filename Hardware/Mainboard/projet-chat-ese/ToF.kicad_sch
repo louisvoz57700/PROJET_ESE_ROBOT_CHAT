@@ -334,7 +334,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U4"
+			(property "Reference" "U501"
 				(at 2.1433 25.4 0)
 				(effects
 					(font
@@ -352,7 +352,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
+			(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
 				(at 0 -25.4 0)
 				(effects
 					(font
@@ -548,6 +548,25 @@
 						)
 					)
 					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -25.4 90)
+					(length 2.54)
+					(hide yes)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2565,6 +2584,9 @@
 		)
 		(pin "19"
 			(uuid "688394a1-cbf4-4865-a14b-ed99fd9cebcf")
+		)
+		(pin "25"
+			(uuid "19c3c335-dc11-4773-90f5-06de3c6bf3f8")
 		)
 		(instances
 			(project "projet-chat-ese"

@@ -116,7 +116,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
-	printf("\r\n==== BLE TEST ====\r\n");
+  printf("\r\n==== BLE TEST ====\r\n");
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
