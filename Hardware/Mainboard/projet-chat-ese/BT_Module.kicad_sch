@@ -1100,6 +1100,12 @@
 		(color 0 0 0 0)
 		(uuid "312f08e1-14e9-4cc3-9d3a-cdbae4a4aa23")
 	)
+	(junction
+		(at 152.4 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e8a7b0e-56db-4d37-b3cf-0660c1b70e6c")
+	)
 	(no_connect
 		(at 100.33 77.47)
 		(uuid "15f4f74f-e4ec-47c5-b236-f10279bfc0f1")
@@ -1142,6 +1148,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 67.31) (xy 151.13 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d4fb464-b97d-433c-8892-332aefc3ee21")
+	)
+	(wire
+		(pts
 			(xy 151.13 77.47) (xy 165.1 77.47)
 		)
 		(stroke
@@ -1162,6 +1178,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 67.31) (xy 152.4 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e24e37c-0d63-4bb8-a1ea-21635a418961")
+	)
+	(wire
+		(pts
 			(xy 92.71 67.31) (xy 100.33 67.31)
 		)
 		(stroke
@@ -1179,16 +1205,6 @@
 			(type default)
 		)
 		(uuid "9e80fc9a-0e6d-4aba-a435-8727e598a2f2")
-	)
-	(wire
-		(pts
-			(xy 151.13 67.31) (xy 153.67 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b24665f8-bc81-4d34-9663-ca4870cef26d")
 	)
 	(wire
 		(pts
@@ -1229,6 +1245,16 @@
 			(type default)
 		)
 		(uuid "d1c1b949-92e7-4e72-af54-73372b1ec164")
+	)
+	(wire
+		(pts
+			(xy 152.4 66.04) (xy 152.4 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e819c17e-f56b-45d0-a71d-d30cc43fc73a")
 	)
 	(wire
 		(pts
@@ -1282,6 +1308,17 @@
 			(justify right)
 		)
 		(uuid "9570b306-31b3-491a-b0fe-b3fb983a1458")
+	)
+	(hierarchical_label "BLE_CONFIG"
+		(shape input)
+		(at 154.94 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3af51c6-77bd-479d-bdef-90f0cdc78188")
 	)
 	(hierarchical_label "BT_UART_RTS"
 		(shape input)
@@ -1655,72 +1692,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 153.67 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "add53305-0172-4813-89d5-04d2af3ef18e")
-		(property "Reference" "#PWR0704"
-			(at 153.67 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 153.67 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 153.67 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d77d2e18-e7db-4a69-bbdb-0ddd1427691f")
-		)
-		(instances
-			(project "projet-chat-ese"
-				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/ca378a5f-e1f8-4dc6-a778-a2ff03d02fd0"
-					(reference "#PWR0704")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 92.71 72.39 0)
 		(unit 1)
@@ -1781,6 +1752,142 @@
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/ca378a5f-e1f8-4dc6-a778-a2ff03d02fd0"
 					(reference "#PWR0702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 152.4 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3df0f75-fd24-4eb6-987f-fb148fed02a3")
+		(property "Reference" "R3"
+			(at 154.94 62.2299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 154.94 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20041ea9-db57-4c60-bcc0-833b3bd87c52")
+		)
+		(pin "2"
+			(uuid "5da0c45f-b342-4d28-9240-8e6c924900ed")
+		)
+		(instances
+			(project ""
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/ca378a5f-e1f8-4dc6-a778-a2ff03d02fd0"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 152.4 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da276820-6c8e-4fbf-a368-dfef6c6681d1")
+		(property "Reference" "#PWR04"
+			(at 152.4 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 152.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 152.4 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b4f9af5-a49e-49b2-ad88-b38368ea56b9")
+		)
+		(instances
+			(project "projet-chat-ese"
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/ca378a5f-e1f8-4dc6-a778-a2ff03d02fd0"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)

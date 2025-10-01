@@ -2607,6 +2607,12 @@
 		(uuid "bca090e1-259b-4d47-8110-2d5412361c77")
 	)
 	(junction
+		(at 274.32 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bee7e0e2-888a-4f20-9d5a-1a405a7ed3c1")
+	)
+	(junction
 		(at 255.27 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2980,6 +2986,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 33.02) (xy 274.32 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "595fbaff-73a3-4268-a0fd-4d331b71d112")
+	)
+	(wire
+		(pts
 			(xy 88.9 95.25) (xy 93.98 95.25)
 		)
 		(stroke
@@ -3260,6 +3276,26 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 33.02) (xy 177.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92fd8463-2a16-4e16-b68d-0b9903254861")
+	)
+	(wire
+		(pts
+			(xy 274.32 33.02) (xy 274.32 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d06480-56bc-4f8b-bdc6-31cc3202e200")
+	)
+	(wire
+		(pts
 			(xy 229.87 40.64) (xy 229.87 53.34)
 		)
 		(stroke
@@ -3460,6 +3496,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 83.82) (xy 254 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1c9af08-ecc2-4646-b084-a93cd3b7bbd4")
+	)
+	(wire
+		(pts
 			(xy 46.99 143.51) (xy 64.77 143.51)
 		)
 		(stroke
@@ -3610,6 +3656,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 31.75) (xy 274.32 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e03e43c5-228d-433a-8c56-9af370d6ce34")
+	)
+	(wire
+		(pts
 			(xy 34.29 80.01) (xy 34.29 78.74)
 		)
 		(stroke
@@ -3747,6 +3803,26 @@
 			(type default)
 		)
 		(uuid "fc8b5b42-1625-4d13-b598-612134030ffc")
+	)
+	(label "MOTOR_VREF"
+		(at 165.1 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02cf356e-8e4c-491d-b289-87915f2f6735")
+	)
+	(label "MOTOR_VREF"
+		(at 273.05 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "107c92ad-8784-47e3-98b3-a25f350df584")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -4025,6 +4101,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 274.32 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ebb4ddb-b392-4fb3-9a88-bb2c9d41f89d")
+		(property "Reference" "R1"
+			(at 276.86 27.9399 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 276.86 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 274.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 274.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4511115-7e47-4ae0-9d23-b6308bdc6ae3")
+		)
+		(pin "1"
+			(uuid "c2a6329a-c6ef-44ce-a951-118ffac72acb")
+		)
+		(instances
+			(project ""
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 123.19 83.82 180)
 		(unit 1)
@@ -4227,6 +4373,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 274.32 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a60e1a1-15dd-40d7-bcbc-92aa87d844c6")
+		(property "Reference" "R2"
+			(at 276.86 35.5599 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 276.86 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 274.32 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 274.32 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2b11e0f8-b332-4037-80ad-fdd0b2122018")
+		)
+		(pin "1"
+			(uuid "1103c4e0-8a5e-4acd-9cf1-0baf7c1b9e39")
+		)
+		(instances
+			(project "projet-chat-ese"
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 110.49 0)
 		(unit 1)
@@ -4287,6 +4503,72 @@
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 274.32 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "482d3251-1cad-43c9-a660-c374ad53ba22")
+		(property "Reference" "#PWR03"
+			(at 274.32 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 274.32 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 274.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e202b5f-b7ba-4eb3-a47e-e0c87930f2c2")
+		)
+		(instances
+			(project ""
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6640,6 +6922,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 274.32 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee6830c2-9beb-41b2-875b-51af64ff862e")
+		(property "Reference" "#PWR02"
+			(at 274.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 274.32 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 274.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6d13f1b-8358-43a3-af29-4d5bc91eb0a2")
+		)
+		(instances
+			(project ""
+				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 46.99 138.43 0)
 		(unit 1)
@@ -7039,6 +7387,16 @@
 				(justify right)
 			)
 		)
+		(pin "BLE_CONFIG" input
+			(at 237.49 83.82 0)
+			(uuid "ace88225-0c86-48a0-a444-96148f61fecb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
@@ -7223,6 +7581,16 @@
 				(justify right)
 			)
 		)
+		(pin "VREF" input
+			(at 177.8 33.02 180)
+			(uuid "cef0fc8e-88b6-403d-b575-cf52408cc541")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
@@ -7387,6 +7755,16 @@
 				(justify left)
 			)
 		)
+		(pin "BLE_CONFIG" input
+			(at 254 83.82 180)
+			(uuid "a6d773b7-d4c9-4ae2-99d8-f806cf3ac5df")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1"
@@ -7477,6 +7855,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "VREF" input
+			(at 257.81 33.02 0)
+			(uuid "24f84443-132e-48eb-b76b-11c32b072c44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
