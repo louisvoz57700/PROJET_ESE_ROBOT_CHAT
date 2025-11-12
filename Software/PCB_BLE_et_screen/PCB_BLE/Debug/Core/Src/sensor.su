@@ -1,0 +1,9 @@
+../Core/Src/sensor.c:27:6:INIT_ADC	16	static
+../Core/Src/sensor.c:36:6:UPDATE_V_I	24	static
+../Core/Src/sensor.c:48:19:ADXL343_WriteReg	32	static
+../Core/Src/sensor.c:54:19:ADXL343_ReadReg	32	static
+../Core/Src/sensor.c:61:19:ADXL343_ReadMulti	32	static
+../Core/Src/sensor.c:66:19:ADXL343_Init	16	static
+../Core/Src/sensor.c:109:19:ADXL343_ReadXYZ	40	static
+../Core/Src/sensor.c:141:19:ADXL343_EnableSingleTap	8	static
+../Core/Src/sensor.c:160:6:I2C_ResetBus	40	static
