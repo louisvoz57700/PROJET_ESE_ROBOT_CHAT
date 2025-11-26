@@ -1,0 +1,11 @@
+../Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+../bm71/bm71_driver.c:9:16:calc_checksum	24	static
+../bm71/bm71_driver.c:16:13:start_rx_dma	16	static
+../bm71/bm71_driver.c:22:13:post_event	552	static
+../bm71/bm71_driver.c:33:6:BLEParseTask	560	static
+../bm71/bm71_driver.c:90:6:HAL_UART_RxCpltCallback	24	static,ignoring_inline_asm
+../bm71/bm71_driver.c:100:9:bm71_create	16	static
+../bm71/bm71_driver.c:109:5:bm71_write	24	static
+../bm71/bm71_driver.c:114:5:bm71_send_hidden_cmd	552	static
+../bm71/bm71_driver.c:132:6:BLEShellTask	704	static
+../bm71/bm71_driver.c:205:6:bm71_start	24	static

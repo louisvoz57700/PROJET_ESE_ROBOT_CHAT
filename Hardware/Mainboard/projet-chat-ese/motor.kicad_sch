@@ -2286,16 +2286,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
-		(at 210.82 43.18 0)
+		(at 210.82 45.72 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5e06460b-9bcd-488e-9f95-a72d92968cdd")
-		(property "Reference" "J201"
-			(at 212.09 43.1799 0)
+		(property "Reference" "J601"
+			(at 212.09 45.7201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2304,7 +2304,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06_Socket"
-			(at 212.09 45.7199 0)
+			(at 212.09 43.1801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2313,7 +2313,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical"
-			(at 210.82 43.18 0)
+			(at 210.82 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,7 +2322,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 43.18 0)
+			(at 210.82 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2331,7 +2331,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 210.82 43.18 0)
+			(at 210.82 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2360,11 +2360,11 @@
 		(instances
 			(project "projet-chat-ese"
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/afd2bf17-892c-4de5-9c32-bb69ff013475"
-					(reference "J201")
+					(reference "J601")
 					(unit 1)
 				)
 				(path "/3d65b2f4-4354-4e18-9b77-809d2b1122a1/dbb36908-5e11-4a5e-b84d-3e3df0bcdb8e"
-					(reference "J601")
+					(reference "J602")
 					(unit 1)
 				)
 			)
