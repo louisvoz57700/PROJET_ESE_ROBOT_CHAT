@@ -1,0 +1,10 @@
+../motors/moteur.c:21:7:Encoder_GetAngleDeg	1
+../motors/moteur.c:27:7:Encoder_GetDistanceMM	1
+../motors/moteur.c:32:6:Encoder_Init	2
+../motors/moteur.c:40:5:Encoder_GetPosition	3
+../motors/moteur.c:55:6:Motor_Init	1
+../motors/moteur.c:62:6:Motor_SetSpeed	1
+../motors/moteur.c:68:6:Motor_Forward	1
+../motors/moteur.c:76:6:Motor_Reverse	1
+../motors/moteur.c:84:6:Motor_Stop	1
+../motors/moteur.c:90:6:Target_angle	2
