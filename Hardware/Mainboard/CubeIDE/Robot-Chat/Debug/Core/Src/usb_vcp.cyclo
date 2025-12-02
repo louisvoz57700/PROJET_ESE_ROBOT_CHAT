@@ -1,0 +1,11 @@
+../Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	1
+../Core/Src/usb_vcp.c:44:13:history_add	4
+../Core/Src/usb_vcp.c:54:20:history_get	3
+../Core/Src/usb_vcp.c:64:8:usb_vcp_data_received	13
+../Core/Src/usb_vcp.c:104:6:usb_vcp_init	1
+../Core/Src/usb_vcp.c:110:6:usb_vcp_task	14
+../Core/Src/usb_vcp.c:195:6:usb_vcp_line_ready	1
+../Core/Src/usb_vcp.c:200:10:usb_vcp_get_line	2
+../Core/Src/usb_vcp.c:211:6:usb_vcp_send_raw	1
+../Core/Src/usb_vcp.c:217:5:usb_vcp_printf	2
+../Core/Src/usb_vcp.c:228:6:usb_vcp_send	1
