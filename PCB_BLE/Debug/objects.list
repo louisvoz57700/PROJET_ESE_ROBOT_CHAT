@@ -1,3 +1,4 @@
+"./Core/Src/LIDAR.o"
 "./Core/Src/VL53L0X.o"
 "./Core/Src/adc.o"
 "./Core/Src/app_debug.o"

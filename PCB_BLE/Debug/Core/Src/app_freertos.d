@@ -71,7 +71,12 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
  ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Core/Inc/VL53L0X.h ../Core/Inc/sensor.h ../Core/Inc/moteur.h \
+ ../Core/Inc/lidar.h ../Core/Inc/main.h ../Core/Inc/adc.h \
+ ../Core/Inc/dma.h ../Core/Inc/i2c.h ../Core/Inc/ipcc.h \
+ ../Core/Inc/lptim.h ../Core/Inc/usart.h ../Core/Inc/rf.h \
+ ../Core/Inc/rtc.h ../Core/Inc/tim.h ../Core/Inc/gpio.h
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -149,3 +154,18 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
 ../Core/Inc/app_common.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Core/Inc/VL53L0X.h:
+../Core/Inc/sensor.h:
+../Core/Inc/moteur.h:
+../Core/Inc/lidar.h:
+../Core/Inc/main.h:
+../Core/Inc/adc.h:
+../Core/Inc/dma.h:
+../Core/Inc/i2c.h:
+../Core/Inc/ipcc.h:
+../Core/Inc/lptim.h:
+../Core/Inc/usart.h:
+../Core/Inc/rf.h:
+../Core/Inc/rtc.h:
+../Core/Inc/tim.h:
+../Core/Inc/gpio.h:

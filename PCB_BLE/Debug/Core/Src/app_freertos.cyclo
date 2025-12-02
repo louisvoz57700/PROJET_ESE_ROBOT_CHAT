@@ -1,2 +1,10 @@
-../Core/Src/app_freertos.c:72:6:MX_FREERTOS_Init	1
-../Core/Src/app_freertos.c:114:6:StartDefaultTask	1
+../Core/Src/app_freertos.c:145:13:configureTimerForRunTimeStats	1
+../Core/Src/app_freertos.c:150:22:getRunTimeCounterValue	1
+../Core/Src/app_freertos.c:161:6:MX_FREERTOS_Init	7
+../Core/Src/app_freertos.c:269:6:StartDefaultTask	1
+../Core/Src/app_freertos.c:283:6:Task_safety	4
+../Core/Src/app_freertos.c:328:6:Task_main_loop	1
+../Core/Src/app_freertos.c:340:6:Task_odom	1
+../Core/Src/app_freertos.c:351:6:Task_lidar	1
+../Core/Src/app_freertos.c:369:6:Task_com	1
+../Core/Src/app_freertos.c:379:6:Task_control_loop	1

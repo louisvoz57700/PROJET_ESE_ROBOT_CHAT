@@ -130,7 +130,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
  ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h \
- ../STM32_WPAN/App/hrs_app.h ../Core/Inc/VL53L0X.h ../Core/Inc/moteur.h
+ ../STM32_WPAN/App/hrs_app.h ../Core/Inc/VL53L0X.h ../Core/Inc/sensor.h \
+ ../Core/Inc/moteur.h ../Core/Inc/LIDAR.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -278,4 +279,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:
 ../STM32_WPAN/App/hrs_app.h:
 ../Core/Inc/VL53L0X.h:
+../Core/Inc/sensor.h:
 ../Core/Inc/moteur.h:
+../Core/Inc/LIDAR.h:

@@ -48,20 +48,20 @@ void UPDATE_V_I(Measure *m1,uint16_t *adc_buffer)
 HAL_StatusTypeDef ADXL343_WriteReg(uint8_t reg, uint8_t value)
 {
     return HAL_I2C_Mem_Write(&hi2c1, ADXL343_ADDR, reg,
-                             I2C_MEMADD_SIZE_8BIT, &value, 1, HAL_MAX_DELAY);
+                             I2C_MEMADD_SIZE_8BIT, &value, 1, 100);
 }
 
 HAL_StatusTypeDef ADXL343_ReadReg(uint8_t reg, uint8_t *value)
 {
     return HAL_I2C_Mem_Read(&hi2c1, ADXL343_ADDR, reg,
-                            I2C_MEMADD_SIZE_8BIT, value, 1, HAL_MAX_DELAY);
+                            I2C_MEMADD_SIZE_8BIT, value, 1, 100);
 }
 
 /* Lecture de plusieurs octets (utilisée pour lire les axes) */
 HAL_StatusTypeDef ADXL343_ReadMulti(uint8_t reg, uint8_t *buffer, uint16_t size)
 {
     return HAL_I2C_Mem_Read(&hi2c1, ADXL343_ADDR, reg,
-                            I2C_MEMADD_SIZE_8BIT, buffer, size, HAL_MAX_DELAY);
+                            I2C_MEMADD_SIZE_8BIT, buffer, size, 100);
 }
 HAL_StatusTypeDef ADXL343_Init(void)
 {
