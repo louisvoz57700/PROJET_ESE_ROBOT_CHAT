@@ -443,8 +443,6 @@ int main(void)
 	osDelay(5000);
 	/* USER CODE END 2 */
 
-	/* Init scheduler */
-	osKernelInitialize();
 	/* Init code for STM32_WPAN */
 	MX_APPE_Init();
 	/* Call init function for freertos objects (in cmsis_os2.c) */
