@@ -98,6 +98,13 @@ uint32_t cycles;
 uint32_t temps;
 
 statInfo_t_VL53L0X distanceStr;
+
+float mean_velo = 0;
+
+extern float velocity;
+
+#define ALPHA  0.95
+#define TARGET 25.0
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -217,7 +224,7 @@ void MX_FREERTOS_Init(void) {
 
   const osThreadAttr_t comTaskAttr = {
      	 .name = "Task_com",
-    	 .priority = osPriorityNormal,
+    	 .priority = osPriorityHigh,
     	 .stack_size = 512
   };
   comTaskHandle = osThreadNew(Task_com, NULL, &comTaskAttr);
@@ -289,18 +296,13 @@ void Task_safety(void *argument)
     // Remise à zéro du compteur au début
     for (;;)
     {
-    	cycles = DWT->CYCCNT;
+    	//cycles = DWT->CYCCNT;
+    	//---------MESURE TOF---------//
         osMutexAcquire(i2cSem, pdMS_TO_TICKS(200));
-
-        //segment_points(&vue, 720);
-        //YD_Parser_MainLoop(&vue);
     	mesure_TOF(&capteur_tof);
         osMutexRelease(i2cSem);
+        //------------------//
 
-        osMutexAcquire(UARTSem, pdMS_TO_TICKS(200));
-        //segment_points(&vue, 720);
-		YD_Parser_MainLoop(&vue);
-		osMutexRelease(UARTSem);
         if (capteur_tof.front > 200)
         {
         	state.space = 1 ;
@@ -318,6 +320,14 @@ void Task_safety(void *argument)
 			Motor_Stop(&state );
 		}
 		temps = DWT->CYCCNT-cycles;
+	  Control_Speed(TARGET,temps);
+	  cycles = DWT->CYCCNT;
+	  mean_velo =  ALPHA * mean_velo + (1-ALPHA)*velocity;
+
+		//temps = DWT->CYCCNT-cycles;
+
+
+
 		osDelay(20);
 
 
@@ -342,7 +352,6 @@ void Task_odom(void *argument)
   UNUSED(argument);
   for (;;)
   {
-	angle = Encoder_GetAngleDeg(&htim1);
 
    osDelay(10);
   }
@@ -354,9 +363,14 @@ void Task_lidar(void *argument)
   for (;;)
   {
 
-	  osMutexAcquire(i2cSem, pdMS_TO_TICKS(200));
+	  osMutexAcquire(UARTSem, pdMS_TO_TICKS(200));
+	  YD_Parser_MainLoop(&vue);
+	  segment_points(&vue, 360);
+	  osMutexRelease(UARTSem);
+	  osDelay(10);
+	  //osMutexAcquire(i2cSem, pdMS_TO_TICKS(200));
       //UPDATE_V_I(&m1,&adc_buffer);
-      osMutexRelease(i2cSem);
+      //osMutexRelease(i2cSem);
 
 
 	  //YD_Parser_MainLoop(&vue);
@@ -382,9 +396,14 @@ void Task_control_loop(void *argument)
   uint8_t source;
   TickType_t lastWakeTime = xTaskGetTickCount();
   for (;;)
-  {
-	  pos.angle_r = Encoder_GetAngleDeg(&htim2);
-	  pos.angle_l =Encoder_GetAngleDeg(&htim1);
+  {   if (state.space == 0)
+  	  {
+	  	  //Motor_Forward(400);
+  	  }
+
+
+	  pos.angle_r = Encoder_UpdateAngle(&htim2);
+	  pos.angle_l =Encoder_UpdateAngle(&htim1);
 	  vTaskDelayUntil(&lastWakeTime, pdMS_TO_TICKS(10));
   }
 }

@@ -1073,3 +1073,41 @@ void mesure_TOF(TOF* tof)
 	status = TCA9548A_SelectChannel(0);
 
 }
+
+void INIT_TOFS(I2C_HandleTypeDef *hi2c)
+{
+	HAL_StatusTypeDef status;
+	status = TCA9548A_SelectChannel(0);
+	I2C_ResetBus(hi2c);
+	initVL53L0X(1, hi2c);
+	setSignalRateLimit(200);
+	setVcselPulsePeriod(VcselPeriodPreRange, 10);
+	setVcselPulsePeriod(VcselPeriodFinalRange, 14);
+	setMeasurementTimingBudget(300 * 1000UL);
+
+
+	status = TCA9548A_SelectChannel(2);
+	I2C_ResetBus(hi2c);
+	initVL53L0X(1, hi2c);
+	setSignalRateLimit(200);
+	setVcselPulsePeriod(VcselPeriodPreRange, 10);
+	setVcselPulsePeriod(VcselPeriodFinalRange, 14);
+	setMeasurementTimingBudget(300 * 1000UL);
+
+	status = TCA9548A_SelectChannel(3);
+	I2C_ResetBus(hi2c);
+	initVL53L0X(1, hi2c);
+	setSignalRateLimit(200);
+	setVcselPulsePeriod(VcselPeriodPreRange, 10);
+	setVcselPulsePeriod(VcselPeriodFinalRange, 14);
+	setMeasurementTimingBudget(300 * 1000UL);
+
+	status = TCA9548A_SelectChannel(1);
+	I2C_ResetBus(hi2c);
+	initVL53L0X(1, hi2c);
+	setSignalRateLimit(200);
+	setVcselPulsePeriod(VcselPeriodPreRange, 10);
+	setVcselPulsePeriod(VcselPeriodFinalRange, 14);
+	setMeasurementTimingBudget(300 * 1000UL);
+}
+

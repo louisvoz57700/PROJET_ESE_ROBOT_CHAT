@@ -26,12 +26,12 @@ static void on_new_frame(uint16_t start_ang_raw, uint16_t end_ang_raw,
 
 ///////////////////DEFINE/////////////////
 
-#define FACTEUR 0.5
+#define FACTEUR 1
 #define MAX_SAMPLES_PER_PKT  200U      // max samples par trame
-#define N_ANGLES   (180)     // 0.1° resolution pour 0°-360°
+#define N_ANGLES   (360 * FACTEUR)     // 0.1° resolution pour 0°-360°
 #define X_MAX 600// Taille maximale en X en mm
 #define Y_MAX 1500  // Taille maximale en Y en mm
-#define MAX_RANGE_LIDAR 2000 // Cercle de 25 cm
+#define MAX_RANGE_LIDAR 200 // Cercle de 25 cm
 #define M_PI             3.14159265358979323846f
 #define MAX_POINTS      (360 * FACTEUR)   // exemple : 1 tour LiDAR = 720 mesures
 #define MAX_CLUSTERS       20

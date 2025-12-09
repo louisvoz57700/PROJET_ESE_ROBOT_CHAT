@@ -67,8 +67,8 @@ typedef struct {
 } TOF;
 
 typedef struct {
-	uint8_t PWM_R;
-	uint8_t PWM_L;
+	uint16_t PWM_R;
+	uint16_t PWM_L;
 	uint8_t chock;
 	uint8_t space ; // 0 = RAS , 1 = devant, 2 = derriere, 3 = droite, 4 = gauche
 } System_state;

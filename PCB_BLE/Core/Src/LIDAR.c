@@ -18,7 +18,7 @@
 
 uint16_t compteur = 0;
 float remplissage = 0.0;
-#define RX_BUF_SIZE 180
+#define RX_BUF_SIZE 360
 // Buffer DMA circulaire
 uint8_t dma_rx_buf[RX_BUF_SIZE];
 volatile uint16_t old_pos = 0;
@@ -133,16 +133,16 @@ void YD_Parser_MainLoop(Pos *vue)
             	                	remplissage =(float) compteur / 360.0f;
             	}
 
-            	//float X1 = -cos(-rad) * distance_mm;
-            	//float Y1 = sin(-rad) * distance_mm;
+            	float X1 = -cos(-rad) * distance_mm;
+            	float Y1 = sin(-rad) * distance_mm;
 
-            	//if (X1 > 0 && X1 < X_MAX && Y1 > 0 && Y1<Y_MAX){
+            	if (X1 > 0 && X1 < X_MAX && Y1 > 0 && Y1<Y_MAX){
                     vue[idx].distance = distance_mm;
-                    //vue[idx].X = X1;
-                    //vue[idx].Y = Y1;
+                    vue[idx].X = X1;
+                    vue[idx].Y = Y1;
                     vue[idx].Angle = angle;
-            	//}
-                /*
+            	}
+
             	else{
 
             		vue[idx].distance = 0;
@@ -151,7 +151,6 @@ void YD_Parser_MainLoop(Pos *vue)
                     vue[idx].Angle = angle ;
 
             	}
-            	*/
 
             }
         	else{

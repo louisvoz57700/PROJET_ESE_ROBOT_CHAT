@@ -1,6 +1,6 @@
 ../Core/Src/LIDAR.c:36:6:YD_Start_UART_DMA	1
 ../Core/Src/LIDAR.c:42:17:get_dma_write_index	1
 ../Core/Src/LIDAR.c:47:13:validate_checksum	3
-../Core/Src/LIDAR.c:61:6:YD_Parser_MainLoop	16
-../Core/Src/LIDAR.c:182:5:compute_cluster	15
-../Core/Src/LIDAR.c:254:6:segment_points	15
+../Core/Src/LIDAR.c:61:6:YD_Parser_MainLoop	20
+../Core/Src/LIDAR.c:181:5:compute_cluster	15
+../Core/Src/LIDAR.c:253:6:segment_points	15

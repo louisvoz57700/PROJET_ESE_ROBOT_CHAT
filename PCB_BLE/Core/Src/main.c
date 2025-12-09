@@ -71,7 +71,7 @@ extern Position pos ;
 
 extern uint16_t distance;
 extern statInfo_t_VL53L0X distanceStr;
-System_state state ;
+System_state state = {0};
 TOF capteur_tof ;
 #define LPTIM_PERIOD_10MS 2500
 
@@ -185,47 +185,16 @@ int main(void)
     }
 
 
-  //Initialise the VL53L0X
-
-  HAL_StatusTypeDef status;
-  status = TCA9548A_SelectChannel(0);
-  I2C_ResetBus(&hi2c1);
-  initVL53L0X(1, &hi2c1);
-  setSignalRateLimit(200);
-  setVcselPulsePeriod(VcselPeriodPreRange, 10);
-  setVcselPulsePeriod(VcselPeriodFinalRange, 14);
-  setMeasurementTimingBudget(300 * 1000UL);
-
-
-  status = TCA9548A_SelectChannel(2);
-  I2C_ResetBus(&hi2c1);
-  initVL53L0X(1, &hi2c1);
-  setSignalRateLimit(200);
-  setVcselPulsePeriod(VcselPeriodPreRange, 10);
-  setVcselPulsePeriod(VcselPeriodFinalRange, 14);
-  setMeasurementTimingBudget(300 * 1000UL);
-
-  status = TCA9548A_SelectChannel(3);
-  I2C_ResetBus(&hi2c1);
-  initVL53L0X(1, &hi2c1);
-  setSignalRateLimit(200);
-  setVcselPulsePeriod(VcselPeriodPreRange, 10);
-  setVcselPulsePeriod(VcselPeriodFinalRange, 14);
-  setMeasurementTimingBudget(300 * 1000UL);
-
-  status = TCA9548A_SelectChannel(1);
-  I2C_ResetBus(&hi2c1);
-  initVL53L0X(1, &hi2c1);
-  setSignalRateLimit(200);
-  setVcselPulsePeriod(VcselPeriodPreRange, 10);
-  setVcselPulsePeriod(VcselPeriodFinalRange, 14);
-  setMeasurementTimingBudget(300 * 1000UL);
-
+  //Initialise the 4th TOF
+  INIT_TOFS(&hi2c1);
+  ///////
   CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;  // Active TRC
   DWT->CYCCNT = 0;                                  // Reset counter
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;              // Active CYCCNT
   //Motor_Init();
   //Motor_Forward(500);
+ // Motor_Ramp_L(&state, 600, 4);
+
 
   if (HAL_LPTIM_Counter_Start_IT(&hlptim1,LPTIM_PERIOD_10MS) != HAL_OK)
   {
@@ -233,6 +202,7 @@ int main(void)
   }
   Encoder_Init();
   HAL_UART_Receive_DMA(&hlpuart1, (uint8_t *)dma_byte_buf, DMA_BYTE_BUF_SIZE);
+
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -357,7 +327,9 @@ void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
 {
     if (hlptim->Instance == LPTIM1)
     {
-    	Update_Encoder_Vitesse(pos,&last_count_d,&last_count_g);
+    	  //Control_Speed(10.0f,0.01);
+
+    	//Update_Encoder_Vitesse(pos,&last_count_d,&last_count_g);
 
     	/*
     	// PID gauche
