@@ -1,0 +1,2 @@
+../Core/Src/tasks/task_comm.c:12:13:drawRoleOLED	4
+../Core/Src/tasks/task_comm.c:37:6:TaskCommuncation	1
