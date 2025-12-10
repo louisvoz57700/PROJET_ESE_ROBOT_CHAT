@@ -18,7 +18,7 @@
 ../Core/Src/capteurs/VL53L0X.c:726:6:startContinuous	3
 ../Core/Src/capteurs/VL53L0X.c:764:6:stopContinuous	1
 ../Core/Src/capteurs/VL53L0X.c:779:10:readRangeContinuousMillimeters	5
-../Core/Src/capteurs/VL53L0X.c:822:10:readRangeSingleMillimeters	4
+../Core/Src/capteurs/VL53L0X.c:822:10:readRangeSingleMillimeters	1
 ../Core/Src/capteurs/VL53L0X.c:844:6:timeoutOccurred	1
 ../Core/Src/capteurs/VL53L0X.c:851:6:setTimeout	1
 ../Core/Src/capteurs/VL53L0X.c:855:10:getTimeout	1

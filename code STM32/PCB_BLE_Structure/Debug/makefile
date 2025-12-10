@@ -76,8 +76,8 @@ all: main-build
 main-build: PCB_BLE.elf secondary-outputs
 
 # Tool invocations
-PCB_BLE.elf PCB_BLE.map: $(OBJS) $(USER_OBJS) C:\Users\knn64\git\PROJET_ESE_ROBOT_CHAT\code\ STM32\PCB_BLE\STM32WB55CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "PCB_BLE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\knn64\git\PROJET_ESE_ROBOT_CHAT\code STM32\PCB_BLE\STM32WB55CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PCB_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+PCB_BLE.elf PCB_BLE.map: $(OBJS) $(USER_OBJS) C:\Users\knn64\git\PROJET_ESE_ROBOT_CHAT\code\ STM32\PCB_BLE_Structure\STM32WB55CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "PCB_BLE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\knn64\git\PROJET_ESE_ROBOT_CHAT\code STM32\PCB_BLE_Structure\STM32WB55CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PCB_BLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

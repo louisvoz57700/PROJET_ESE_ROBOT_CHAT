@@ -16,15 +16,6 @@ extern osThreadId_t task_lidar_handle ;
 extern osThreadId_t task_ToF_handle;
 
 typedef struct {
-	Measure meas;
-	/* Odometrie*/
-	float robot_x;
-	float robot_y;
-	float robot_heading;   // degrés
-
-} OdomData_t;
-
-typedef struct {
 	/* Lidar */
 	float distance_obstacle;
 	float target_x;

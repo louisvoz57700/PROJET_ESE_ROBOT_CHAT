@@ -12,7 +12,7 @@
 
 
 typedef struct {
-	Measure meas;
+//	Measure meas;
 	/* Odometrie*/
 	float robot_x;
 	float robot_y;

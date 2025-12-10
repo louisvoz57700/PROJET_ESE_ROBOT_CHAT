@@ -12,6 +12,7 @@
 
 #include "tasks/task_FSM.h"
 #include "tasks/task_sensor.h"
+#include "tasks/task_control.h"
 
 typedef enum {
 	STATE_IDLE,
