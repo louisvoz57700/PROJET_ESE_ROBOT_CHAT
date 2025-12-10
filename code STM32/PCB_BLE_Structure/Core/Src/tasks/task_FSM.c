@@ -29,6 +29,8 @@ static float r, theta;               // coordonnées polaires cible
 static float lidar_min;              // distance minimale LiDAR
 
 extern osMessageQueueId_t QLidar;
+
+extern OdomData_t Robot_pos;
 osMessageQueueId_t QFSM;
 
 static void chase_target(float r, float theta){

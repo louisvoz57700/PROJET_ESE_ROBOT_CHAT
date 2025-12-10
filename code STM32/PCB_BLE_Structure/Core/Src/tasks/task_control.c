@@ -14,7 +14,10 @@
 #include "tasks/task_comm.h"
 
 extern osMessageQueueId_t QFSM;
+OdomData_t Robot_pos;
 
+
+OdomData_t Robot_pos; // <--- Position du robot
 /* Tâche 2 : Controle des moteurs
  * Priorité : MAXIMALE 5
  * Comportement :

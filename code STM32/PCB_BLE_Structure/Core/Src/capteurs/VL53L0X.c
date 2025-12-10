@@ -829,13 +829,13 @@ uint16_t readRangeSingleMillimeters( statInfo_t_VL53L0X *extraStats ) {
   writeReg(0x80, 0x00);
   writeReg(SYSRANGE_START, 0x01);
   // "Wait until start bit has been cleared"
-  startTimeout();
-  while (readReg(SYSRANGE_START) & 0x01){
-    if (checkTimeoutExpired()){
-      g_isTimeout = true;
-      return 65535;
-    }
-  }
+//  startTimeout();
+//  while (readReg(SYSRANGE_START) & 0x01){
+//    if (checkTimeoutExpired()){
+//      g_isTimeout = true;
+//      return 65535;
+//    }
+//  }
   return readRangeContinuousMillimeters( extraStats );
 }
 
