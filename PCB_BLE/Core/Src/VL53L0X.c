@@ -813,6 +813,7 @@ void stopContinuous(void)
 uint16_t readRangeContinuousMillimeters( statInfo_t_VL53L0X *extraStats ) {
   uint8_t tempBuffer[12];
   uint16_t temp;
+  //---------take too much time so commented---------//
   /*
   startTimeout();
   while ((readReg(RESULT_INTERRUPT_STATUS) & 0x07) == 0) {
@@ -856,7 +857,6 @@ uint16_t readRangeContinuousMillimeters( statInfo_t_VL53L0X *extraStats ) {
 // based on VL53L0X_PerformSingleRangingMeasurement()
 // extraStats provides additional info for this measurment. Set to 0 if not needed.
 uint16_t readRangeSingleMillimeters( statInfo_t_VL53L0X *extraStats ) {
-  cycles1 = DWT->CYCCNT;
   writeReg(0x80, 0x01);
   writeReg(0xFF, 0x01);
   writeReg(0x00, 0x00);
@@ -866,6 +866,8 @@ uint16_t readRangeSingleMillimeters( statInfo_t_VL53L0X *extraStats ) {
   writeReg(0x80, 0x00);
   writeReg(SYSRANGE_START, 0x01);
   // "Wait until start bit has been cleared"
+  //---------take too much time so commented---------//
+  /*
   startTimeout();
   while (readReg(SYSRANGE_START) & 0x01){
     if (checkTimeoutExpired()){
@@ -873,8 +875,9 @@ uint16_t readRangeSingleMillimeters( statInfo_t_VL53L0X *extraStats ) {
       return 65535;
     }
   }
-  temps1 = DWT->CYCCNT-cycles1;
+  */
   return readRangeContinuousMillimeters( extraStats );
+
 }
 
 // Did a timeout occur in one of the read functions since the last call to

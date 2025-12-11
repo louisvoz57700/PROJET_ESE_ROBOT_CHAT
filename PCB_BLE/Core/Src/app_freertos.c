@@ -94,8 +94,8 @@ extern TOF capteur_tof ;
 
 float angle ;
 
-uint32_t cycles;
-uint32_t temps;
+uint32_t t1;
+uint32_t t2;
 
 statInfo_t_VL53L0X distanceStr;
 
@@ -104,7 +104,7 @@ float mean_velo = 0;
 extern float velocity;
 
 #define ALPHA  0.95
-#define TARGET 25.0
+#define TARGET 10.0
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -299,29 +299,45 @@ void Task_safety(void *argument)
     	//cycles = DWT->CYCCNT;
     	//---------MESURE TOF---------//
         osMutexAcquire(i2cSem, pdMS_TO_TICKS(200));
+        t1 = DWT->CYCCNT;
     	mesure_TOF(&capteur_tof);
+    	t2 = DWT->CYCCNT - t1;
         osMutexRelease(i2cSem);
         //------------------//
 
         if (capteur_tof.front > 200)
         {
         	state.space = 1 ;
+        	Motor_Reverse_R(&state,200);
+        	Motor_Reverse_L(&state,200);
+
         }
         else if (capteur_tof.back > 200)
         {
         	state.space = 2 ;
+        	Motor_Reverse_R(&state,200);
+        	Motor_Reverse_L(&state,200);
+
         }
         else
         {
+        	/*
+        	temps = DWT->CYCCNT-cycles;
+            Control_Speed(TARGET,temps);
+            cycles = DWT->CYCCNT;
+            */
+        	Motor_Forward_R(&state,300);
+        	Motor_Forward_L(&state,300);
         	state.space = 0 ;
         }
+        /*
 		if (state.space > 0)
 		{
-			Motor_Stop(&state );
+			Motor_Forward_R(&state,100);
 		}
-		temps = DWT->CYCCNT-cycles;
-	  Control_Speed(TARGET,temps);
-	  cycles = DWT->CYCCNT;
+		*/
+
+
 	  mean_velo =  ALPHA * mean_velo + (1-ALPHA)*velocity;
 
 		//temps = DWT->CYCCNT-cycles;

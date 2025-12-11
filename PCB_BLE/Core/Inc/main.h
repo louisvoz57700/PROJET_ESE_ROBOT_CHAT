@@ -96,6 +96,7 @@ typedef struct {
     float y;             // barycentre Y
     uint16_t size;         // nombre de points
     uint8_t ttl;   // time-to-live
+    float angle
 } Cluster;
 
 

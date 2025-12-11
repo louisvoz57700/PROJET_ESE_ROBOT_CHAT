@@ -3,8 +3,8 @@
 ../Core/Src/app_freertos.c:168:6:MX_FREERTOS_Init	224	static
 ../Core/Src/app_freertos.c:276:6:StartDefaultTask	16	static
 ../Core/Src/app_freertos.c:290:6:Task_safety	24	static
-../Core/Src/app_freertos.c:338:6:Task_main_loop	16	static
-../Core/Src/app_freertos.c:350:6:Task_odom	16	static
-../Core/Src/app_freertos.c:360:6:Task_lidar	16	static
-../Core/Src/app_freertos.c:383:6:Task_com	16	static
-../Core/Src/app_freertos.c:393:6:Task_control_loop	24	static
+../Core/Src/app_freertos.c:354:6:Task_main_loop	16	static
+../Core/Src/app_freertos.c:366:6:Task_odom	16	static
+../Core/Src/app_freertos.c:376:6:Task_lidar	16	static
+../Core/Src/app_freertos.c:399:6:Task_com	16	static
+../Core/Src/app_freertos.c:409:6:Task_control_loop	24	static

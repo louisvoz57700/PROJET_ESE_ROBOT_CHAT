@@ -176,72 +176,103 @@ void YD_Parser_MainLoop(Pos *vue)
  *
  * retourne 1 si un nouveau cluster a été ajouté, 0 sinon (fusion ou invalide)
  */
-
-
 int compute_cluster(Pos *points, uint16_t start, uint16_t end, uint8_t idx) {
+
     float sum_x = 0.0f, sum_y = 0.0f;
+    float sum_ax = 0.0f, sum_ay = 0.0f;
     uint16_t count = 0;
 
+    // --- 1) ACCUMULATION DES POINTS ---
     for (uint16_t i = start; i <= end; i++) {
         uint16_t d = points[i].distance;
-        if (d < MIN_VALID_DISTANCE) continue; // filtrer points invalides
+        if (d < MIN_VALID_DISTANCE) continue;
 
-        float theta = (points[i].Angle - 90.0f) * (float)M_PI / 180.0f; // conversion rad
+        float theta = (points[i].Angle - 90.0f) * (float)M_PI / 180.0f;
+
         float x = -(float)d * cosf(-theta);
         float y =  (float)d * sinf(-theta);
 
         sum_x += x;
         sum_y += y;
+
+        float a = points[i].Angle * (float)M_PI / 180.0f;
+        sum_ax += cosf(a);
+        sum_ay += sinf(a);
+
         count++;
     }
 
-    if (count == 0) return 0; // pas de point valide -> pas de cluster
+    // Aucun point → pas de cluster
+    if (count == 0) return 0;
 
-    float cx = sum_x / (float)count;
-    float cy = sum_y / (float)count;
+    // --- 2) CALCUL POSITION ---
+    float cx = sum_x / count;
+    float cy = sum_y / count;
 
-    // ignorer cluster centré trop près de l'origine (bruit)
-    if (hypotf(cx, cy) < MIN_CLUSTER_DIST) return 0;
+    // --- 3) CALCUL ANGLE MOYEN ---
+    float avg_angle = atan2f(sum_ay, sum_ax) * 180.0f / (float)M_PI;
+    if (avg_angle < 0) avg_angle += 360.0f;
 
-    // On vérifie si le cluster existe déja
+    // --- 4) FILTRE INTELLIGENT ---
+    // On ne supprime pas les clusters proches du centre,
+    // on vérifie simplement si c’était du bruit clair (seuil plus petit)
+    if (hypotf(cx, cy) < (MIN_CLUSTER_DIST * 0.5f))
+        return 0;
+
+    // --- 5) FUSION AVEC CLUSTERS EXISTANTS ---
     for (uint8_t k = 0; k < cluster_count; k++) {
         if (!clusters[k].active) continue;
+
         float dx = clusters[k].x - cx;
         float dy = clusters[k].y - cy;
         float dist2 = dx*dx + dy*dy;
-        if (dist2 < (MERGE_THRESHOLD * MERGE_THRESHOLD) && dx != 0 && dy != 0) { // on regarde si l'écart entre les 2 clusters est grande
-        	// calcul du barycentre pondéré pour fusionner deux clusters
-        	uint32_t new_size = (uint32_t)clusters[k].size + (uint32_t)count;
-        	clusters[k].x = (clusters[k].x * clusters[k].size + cx * count) / (float)new_size;
-        	clusters[k].y = (clusters[k].y * clusters[k].size + cy * count) / (float)new_size;
 
-			#define SMOOTH_FACTOR 0.01f  // ajustable 0.1 à 0.5
-			clusters[k].x = clusters[k].x * (1.0f - SMOOTH_FACTOR) + cx * SMOOTH_FACTOR;
-			clusters[k].y = clusters[k].y * (1.0f - SMOOTH_FACTOR) + cy * SMOOTH_FACTOR;
+        if (dist2 < (MERGE_THRESHOLD * MERGE_THRESHOLD)) {
 
-        	clusters[k].size = (uint16_t)new_size;
-            // étendre les indices pour recouvrir toute la plage
+            // Fusion pondérée XY
+            uint32_t new_size = clusters[k].size + count;
+            clusters[k].x = (clusters[k].x * clusters[k].size + cx * count) / new_size;
+            clusters[k].y = (clusters[k].y * clusters[k].size + cy * count) / new_size;
+
+            // Fusion des angles
+            float old_ax = cosf(clusters[k].angle * M_PI / 180.0f) * clusters[k].size;
+            float old_ay = sinf(clusters[k].angle * M_PI / 180.0f) * clusters[k].size;
+
+            float new_ax = old_ax + sum_ax;
+            float new_ay = old_ay + sum_ay;
+
+            float merged_angle = atan2f(new_ay, new_ax) * 180.0f / M_PI;
+            if (merged_angle < 0) merged_angle += 360.0f;
+
+            clusters[k].angle = merged_angle;
+
+            clusters[k].size = new_size;
+
+            // Mise à jour des indices min/max
             if (start < clusters[k].start_idx) clusters[k].start_idx = start;
             if (end   > clusters[k].end_idx)   clusters[k].end_idx   = end;
-            return 0; // fusion => pas de nouveau cluster ajouté
+
+            return 0;
         }
     }
 
-    // on crée un nouveau cluster
-    if (idx >= MAX_CLUSTERS) return 0; // sécurité
-    if (clusters[idx].x != cx && clusters[idx].y != cy)
-    {
-        clusters[idx].start_idx = start;
-        clusters[idx].end_idx   = end;
-        clusters[idx].size      = count;
-        clusters[idx].x         = cx;
-        clusters[idx].y         = cy;
-        clusters[idx].active    = 1;
-        return 1;
-    }
+    // --- 6) CREATION D'UN NOUVEAU CLUSTER ---
+    if (idx >= MAX_CLUSTERS) return 0;
 
+    clusters[idx].start_idx = start;
+    clusters[idx].end_idx   = end;
+    clusters[idx].size      = count;
+    clusters[idx].x         = cx;
+    clusters[idx].y         = cy;
+    clusters[idx].angle     = avg_angle;
+    clusters[idx].active    = 1;
+
+    // On incrémente le nombre total de clusters si nécessaire
+    if (idx >= cluster_count)
+        cluster_count = idx + 1;
+
+    return 1;
 }
-
 /**
  * segment_points :
  * - réinitialise clusters[]
