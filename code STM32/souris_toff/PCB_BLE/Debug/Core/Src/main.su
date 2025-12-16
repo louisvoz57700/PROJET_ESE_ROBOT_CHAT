@@ -1,0 +1,10 @@
+../Core/Src/main.c:129:6:Task_Sensors	32	static
+../Core/Src/main.c:204:6:Task_MotorControl	56	static
+../Core/Src/main.c:329:6:Task_Screen	16	static
+../Core/Src/main.c:363:6:Task_Lidar	40	static
+../Core/Src/main.c:439:5:main	48	static
+../Core/Src/main.c:574:6:SystemClock_Config	112	static
+../Core/Src/main.c:629:6:PeriphCommonClock_Config	88	static
+../Core/Src/main.c:651:6:HAL_ADC_ConvCpltCallback	24	static,ignoring_inline_asm
+../Core/Src/main.c:662:6:HAL_GPIO_EXTI_Callback	24	static,ignoring_inline_asm
+../Core/Src/main.c:677:6:Error_Handler	4	static,ignoring_inline_asm
