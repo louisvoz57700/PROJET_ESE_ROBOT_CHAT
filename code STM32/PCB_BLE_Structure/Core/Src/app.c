@@ -34,6 +34,7 @@ void app_init()
 {
 	/* --- Synchro FreeRTOS ---*/
 	i2c_mutex = osMutexNew(NULL);
+	if (i2c_mutex == NULL)  Error_Handler();
 
 	/* --- INITIALISATION MATERIELLES --- */
 	/* Accelerometre */
@@ -44,13 +45,7 @@ void app_init()
 	TCA9548A_SelectChannel(0);
 
 	/* Initialisation des ToF */
-	if (i2c_mutex == NULL)  Error_Handler();
 	tof.i2c_mutex = i2c_mutex;
-	tof.dist_gauche = -1;
-	tof.dist_droite = -1;
-	tof.dist_devant = -1;
-	tof.dist_derriere = -1;
-	tof.vl53l0x_initialized = false;
 
 	ToF_Init(&tof); // Passer le mutex aussi comme pour OLED
 
@@ -78,7 +73,7 @@ void app_task_init()
 	attr.stack_size = 1280;
 	attr.priority   = BASE_PRIO + 4;
 	attr.name       = "Decision";
-	task_fsm_handle  = osThreadNew(TaskFSM, NULL  , &attr);
+	task_fsm_handle  = osThreadNew(TaskFSM, (void *) &i2c_mutex  , &attr);
 
 	/* 3. Tâche d'Acquisition Capteur Lidar (TaskLidar) */
 	// Priorité: BASE_PRIO + 3 (Moyenne-Haute)

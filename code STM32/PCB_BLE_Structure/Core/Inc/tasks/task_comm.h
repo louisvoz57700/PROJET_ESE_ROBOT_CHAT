@@ -12,6 +12,9 @@
 #include "stdbool.h"
 #include "cmsis_os2.h"
 
+#define COMM_NOTIF_CAT 0xCA
+#define COMM_NOTIF_MOUSE 0xC0
+
 /* Handle de la tache pour recevoir des notifications */
 extern osThreadId_t task_comm_handle;
 

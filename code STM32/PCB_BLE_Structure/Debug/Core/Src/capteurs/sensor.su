@@ -7,4 +7,4 @@
 ../Core/Src/capteurs/sensor.c:103:19:ADXL343_Init	16	static
 ../Core/Src/capteurs/sensor.c:129:19:ADXL343_ReadXYZ	32	static
 ../Core/Src/capteurs/sensor.c:157:6:ToF_Init	16	static
-../Core/Src/capteurs/sensor.c:175:6:I2C_ResetBus	40	static
+../Core/Src/capteurs/sensor.c:181:6:I2C_ResetBus	40	static

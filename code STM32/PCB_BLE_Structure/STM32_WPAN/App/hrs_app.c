@@ -27,9 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define HRS_HRM_CHAR_UUID              0x2A37   // Heart Rate Measurement
-#define HRS_BODY_SENSOR_LOC_CHAR_UUID  0x2A38   // Body Sensor Location
-#define HRS_CTRL_POINT_CHAR_UUID       0x2A39   // Heart Rate Control Point
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,22 +104,20 @@ void HRS_Notification(HRS_App_Notification_evt_t *pNotification)
 #if (BLE_CFG_HRS_ENERGY_EXPENDED_INFO_FLAG != 0)
     case HRS_RESET_ENERGY_EXPENDED_EVT:
 /* USER CODE BEGIN HRS_RESET_ENERGY_EXPENDED_EVT */
-      HRSAPP_Context.ResetEnergyExpended = 1;
+
 /* USER CODE END HRS_RESET_ENERGY_EXPENDED_EVT */
       break;
 #endif
 
     case HRS_NOTIFICATION_ENABLED:
 /* USER CODE BEGIN HRS_NOTIFICATION_ENABLED */
-      /* start periodic measurement */
-      HrMeas();
+
 /* USER CODE END HRS_NOTIFICATION_ENABLED */
       break;
 
     case HRS_NOTIFICATION_DISABLED:
 /* USER CODE BEGIN HRS_NOTIFICATION_DISABLED */
-      /* stop any pending measurement */
-      /* nothing to do – the timer will be cleared by the next flag wait */
+
 /* USER CODE END HRS_NOTIFICATION_DISABLED */
       break;
 
