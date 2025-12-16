@@ -155,6 +155,12 @@ HAL_StatusTypeDef ADXL343_ReadXYZ(Measure *m1)
 /* ToF                                 */
 /* ========================================================================== */
 void ToF_Init(ToF_t *tof){
+	tof->dist_gauche = -1;
+	tof->dist_droite = -1;
+	tof->dist_devant = -1;
+	tof->dist_derriere = -1;
+	tof->vl53l0x_initialized = false;
+
 	I2C_ResetBus(&(tof->i2c));
 
 	if (initVL53L0X(1, &(tof->i2c)))

@@ -13,6 +13,7 @@
 #include "tasks/task_FSM.h"
 #include "tasks/task_sensor.h"
 #include "tasks/task_control.h"
+#include "tasks/task_comm.h"
 
 typedef enum {
 	STATE_IDLE,
@@ -30,12 +31,49 @@ static float r, theta;               // coordonnées polaires cible
 static float lidar_min;              // distance minimale LiDAR
 
 extern osMessageQueueId_t QLidar;
-
-extern OdomData_t Robot_pos;
 osMessageQueueId_t QFSM;
+
+extern OdomData_t Robot_pos; //<--- Position du robot
 
 static void chase_target(float r, float theta){
 
+	if (target.detected)
+				{
+					float angle_relatif = target.angle;
+					if (angle_relatif > 180.0f) angle_relatif -= 360.0f;
+					if (angle_relatif < -180.0f) angle_relatif += 360.0f;
+
+					// ALIGNEMENT
+					if (fabsf(angle_relatif) > ALIGN_TOLERANCE)
+					{
+						Robot_Rotation(ROTATION_SPEED, -angle_relatif);
+						osDelay(100);
+					}
+					// CHARGE
+					else
+					{
+						float dist_to_go = target.dist;
+
+						if (dist_to_go > CHARGE_CHUNK)
+						{
+							// Charge aveugle longue distance
+							Robot_Translation(ATTACK_SPEED, CHARGE_CHUNK);
+						}
+						else
+						{
+							// Assault final
+							Robot_Translation(ATTACK_SPEED + 100, dist_to_go + 100.0f);
+						}
+						osDelay(50);
+					}
+				}
+				else
+				{
+					// Recherche (tourner sur soi-même ou attendre)
+					Motor_Stop_Both();
+					osDelay(100);
+				}
+			}
 }
 
 static void evade()
@@ -58,13 +96,13 @@ static void obstacle_avoid(uint32_t side){
 	if (side != 0xF0) current_side = side;
 	switch (side) {
 	case(FSM_NOTIF_ToF_LEFT) :
-						break;
+								break;
 	case(FSM_NOTIF_ToF_RIGHT) :
-						break;
+								break;
 	case(FSM_NOTIF_ToF_FRONT) :
-						break;
+								break;
 	case(FSM_NOTIF_ToF_REAR) :
-						break;
+								break;
 	default :
 		break;
 	}
@@ -77,10 +115,11 @@ static void obstacle_avoid(uint32_t side){
  */
 void TaskFSM(void *argument)
 {
-	UNUSED(argument);
+	osMutexId_t i2c_mutex = (osMutexId_t) argument;
 
 	LidarFrame frame;
 	uint32_t notif = 0;
+	uint8_t int_source = 0; // Pour identifier les taps accélerometre
 	bool targetDetected, obstacleDetected = false;
 
 	for(;;)
@@ -120,7 +159,17 @@ void TaskFSM(void *argument)
 				}
 			}
 			if (notif & 0x000000F0){
-				obstacle_avoid(notif);
+				if (osMutexAcquire(i2c_mutex, 100) == osOK)
+				{
+					ADXL343_ReadReg(0x30, &int_source);
+					osMutexRelease(i2c_mutex);
+				}
+				/* Action sur Tap */
+				if (int_source & 0x40) // Tap
+				{
+					obstacle_avoid(notif);
+				}
+				int_source = 0;
 			}
 		}
 
@@ -128,8 +177,9 @@ void TaskFSM(void *argument)
 		switch(currentState)
 		{
 		case STATE_SEARCH:
-			if (targetDetected)
+			if (targetDetected){
 				currentState = STATE_CHASE;
+			}
 
 			if (obstacleDetected)
 				obstacle_avoid(0xF0);
@@ -154,11 +204,13 @@ void TaskFSM(void *argument)
 			break;
 
 		case STATE_TAG:
+			xTaskNotify(task_comm_handle, COMM_NOTIF_CAT,  eSetValueWithOverwrite);
 			signal_tag();
 			currentState = STATE_IDLE;
 			break;
 
 		case STATE_HIT:
+			xTaskNotify(task_comm_handle, COMM_NOTIF_MOUSE,  eSetValueWithOverwrite);
 			signal_hit();
 			currentState = STATE_IDLE;
 			break;

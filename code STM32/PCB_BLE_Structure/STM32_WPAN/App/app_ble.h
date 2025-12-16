@@ -71,9 +71,7 @@ void APP_BLE_Init(void);
 APP_BLE_ConnStatus_t APP_BLE_Get_Server_Connection_Status(void);
 
 /* USER CODE BEGIN EF */
-void APP_BLE_Init_Custom(void);
-void APP_BLE_Start_Advertising(void);
-void Update_My_Characteristic(uint8_t *data, uint8_t len);
+
 /* USER CODE END EF */
 
 #ifdef __cplusplus

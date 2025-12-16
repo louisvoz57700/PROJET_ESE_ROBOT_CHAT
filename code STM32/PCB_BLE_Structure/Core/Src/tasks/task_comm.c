@@ -7,23 +7,26 @@
 
 
 #include "tasks/task_comm.h"
+#include "cmsis_os.h"
 
+#define ROLE_CAT 2
+#define ROLE_MOUSE 1
 
 static void drawRoleOLED (oled_handle_t * p){
 
 	/* Dessin protégé */
-		if (osMutexAcquire(p->i2c_mutex, osWaitForever) == osOK)
-		{
-			// Pas de OLED_Clear() pour éviter le scintillement
-			if (p->current_bitmap == 0)
-				OLED_DisplayBitmap(bitmap_data);
-			else if (p->current_bitmap == 1)
-				OLED_DisplayBitmap(bitmap_data_mouse);
-			else
-				OLED_DisplayBitmap(bitmap_data_cat);
+	if (osMutexAcquire(p->i2c_mutex, osWaitForever) == osOK)
+	{
+		// Pas de OLED_Clear() pour éviter le scintillement
+		if (p->current_bitmap == 0)
+			OLED_DisplayBitmap(bitmap_data);
+		else if (p->current_bitmap == 1)
+			OLED_DisplayBitmap(bitmap_data_mouse);
+		else
+			OLED_DisplayBitmap(bitmap_data_cat);
 
-			osMutexRelease(p->i2c_mutex);
-		}
+		osMutexRelease(p->i2c_mutex);
+	}
 }
 
 //Fonction de traitement des infos reçues en BLE
@@ -40,21 +43,20 @@ void TaskCommuncation(void *argument)
 	/* Initialisation OLED protégée */
 	OLED_Clear();
 	OLED_DisplayBitmap(bitmap_data);
-
+	uint32_t notif = 0;
 	for (;;)
 	{
-		/*Message = xQueueReceive(...)
-		Switch(Message):
-		 Case Switch_to_cat :
-			 p.role = ROLE_CAT
-			 drawRoleOled(p)
-		 Case Switch_to_Mouse :
-			 p.role = ROLE_MOUSE
-			 drawRoleOled(p)
+		xTaskNotifyWait(0x00, 0x00, &notif, portMAX_DELAY);
 
-		 */
+		switch(notif) {
+		case(COMM_NOTIF_CAT) :
+			p->current_bitmap = ROLE_CAT;
+			drawRoleOLED(p);
+		case(COMM_NOTIF_MOUSE) :
+			p->current_bitmap = ROLE_MOUSE;
+			drawRoleOLED(p);
+		}
+
 	}
 }
-
-
 

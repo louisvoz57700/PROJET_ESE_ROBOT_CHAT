@@ -395,7 +395,7 @@ static void APPE_SysUserEvtRx(void * pPayload)
     APP_DBG_MSG("Wireless Firmware version %d.%d.%d\n", WirelessInfo.VersionMajor, WirelessInfo.VersionMinor, WirelessInfo.VersionSub);
     APP_DBG_MSG("Wireless Firmware build %d\n", WirelessInfo.VersionReleaseType);
     APP_DBG_MSG("FUS version %d.%d.%d\n", WirelessInfo.FusVersionMajor, WirelessInfo.FusVersionMinor, WirelessInfo.FusVersionSub);
-    APP_BLE_Init();                     // fonction qui crée services, advertising, etc
+
     APP_DBG_MSG(">>== SHCI_SUB_EVT_CODE_READY\n\r");
     APPE_SysEvtReadyProcessing(pPayload);
     break;
