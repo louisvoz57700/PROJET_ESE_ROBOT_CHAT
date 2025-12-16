@@ -62,13 +62,13 @@ typedef struct {
     uint16_t start_idx;
     uint16_t end_idx;
     uint16_t size;
+    float x, y;
     float angle_center;
     uint16_t dist_min;
     uint8_t active;
+    float angle;
 } Cluster;
 
-/* Déclaration externe du tableau pour qu'il soit visible dans le main */
-extern Pos vue[N_ANGLES];
 
 /* --- PROTOTYPES PUBLICS --- */
 
@@ -76,7 +76,7 @@ extern Pos vue[N_ANGLES];
 void YD_Start_UART_DMA(void);
 
 /* Fonction principale de parsing (à appeler dans la boucle/tâche) */
-void YD_Parser_MainLoop(Pos *vue, uint16_t dummy);
+void YD_Parser_MainLoop(Pos *vue);
 
 /* Fonction de segmentation (création des clusters) */
 void segment_points(Pos *points, uint16_t n_points);

@@ -121,11 +121,12 @@ Core/Src/app.o: ../Core/Src/app.c ../Core/Inc/app.h \
  ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
  ../Core/Inc/tasks/task_FSM.h ../Core/Inc/tasks/task_sensor.h \
  ../Core/Inc/capteurs/sensor.h ../Core/Inc/main.h ../Core/Inc/app_entry.h \
- ../Core/Inc/capteurs/VL53L0X.h ../Core/Inc/capteurs/lidar.h \
+ ../Core/Inc/capteurs/VL53L0X.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../Core/Inc/tasks/task_comm.h ../Core/Inc/actionneurs/oled.h \
- ../Core/Inc/tasks/task_control.h ../Core/Inc/actionneurs/moteur.h \
- ../Core/Inc/capteurs/multiplexer.h ../Core/Inc/i2c.h ../Core/Inc/main.h
+ ../Core/Inc/capteurs/lidar.h ../Core/Inc/capteurs/multiplexer.h \
+ ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/tasks/task_comm.h \
+ ../Core/Inc/actionneurs/oled.h ../Core/Inc/tasks/task_control.h \
+ ../Core/Inc/actionneurs/moteur.h
 ../Core/Inc/app.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
@@ -258,12 +259,12 @@ Core/Src/app.o: ../Core/Src/app.c ../Core/Inc/app.h \
 ../Core/Inc/main.h:
 ../Core/Inc/app_entry.h:
 ../Core/Inc/capteurs/VL53L0X.h:
-../Core/Inc/capteurs/lidar.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Core/Inc/capteurs/lidar.h:
+../Core/Inc/capteurs/multiplexer.h:
+../Core/Inc/i2c.h:
+../Core/Inc/main.h:
 ../Core/Inc/tasks/task_comm.h:
 ../Core/Inc/actionneurs/oled.h:
 ../Core/Inc/tasks/task_control.h:
 ../Core/Inc/actionneurs/moteur.h:
-../Core/Inc/capteurs/multiplexer.h:
-../Core/Inc/i2c.h:
-../Core/Inc/main.h:

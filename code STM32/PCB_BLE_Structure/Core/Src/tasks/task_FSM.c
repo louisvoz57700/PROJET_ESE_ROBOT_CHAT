@@ -37,43 +37,43 @@ extern OdomData_t Robot_pos; //<--- Position du robot
 
 static void chase_target(float r, float theta){
 
-	if (target.detected)
-				{
-					float angle_relatif = target.angle;
-					if (angle_relatif > 180.0f) angle_relatif -= 360.0f;
-					if (angle_relatif < -180.0f) angle_relatif += 360.0f;
-
-					// ALIGNEMENT
-					if (fabsf(angle_relatif) > ALIGN_TOLERANCE)
-					{
-						Robot_Rotation(ROTATION_SPEED, -angle_relatif);
-						osDelay(100);
-					}
-					// CHARGE
-					else
-					{
-						float dist_to_go = target.dist;
-
-						if (dist_to_go > CHARGE_CHUNK)
-						{
-							// Charge aveugle longue distance
-							Robot_Translation(ATTACK_SPEED, CHARGE_CHUNK);
-						}
-						else
-						{
-							// Assault final
-							Robot_Translation(ATTACK_SPEED + 100, dist_to_go + 100.0f);
-						}
-						osDelay(50);
-					}
-				}
-				else
-				{
-					// Recherche (tourner sur soi-même ou attendre)
-					Motor_Stop_Both();
-					osDelay(100);
-				}
-			}
+//	if (target.detected)
+//				{
+//					float angle_relatif = target.angle;
+//					if (angle_relatif > 180.0f) angle_relatif -= 360.0f;
+//					if (angle_relatif < -180.0f) angle_relatif += 360.0f;
+//
+//					// ALIGNEMENT
+//					if (fabsf(angle_relatif) > ALIGN_TOLERANCE)
+//					{
+//						Robot_Rotation(ROTATION_SPEED, -angle_relatif);
+//						osDelay(100);
+//					}
+//					// CHARGE
+//					else
+//					{
+//						float dist_to_go = target.dist;
+//
+//						if (dist_to_go > CHARGE_CHUNK)
+//						{
+//							// Charge aveugle longue distance
+//							Robot_Translation(ATTACK_SPEED, CHARGE_CHUNK);
+//						}
+//						else
+//						{
+//							// Assault final
+//							Robot_Translation(ATTACK_SPEED + 100, dist_to_go + 100.0f);
+//						}
+//						osDelay(50);
+//					}
+//				}
+//				else
+//				{
+//					// Recherche (tourner sur soi-même ou attendre)
+//					Motor_Stop_Both();
+//					osDelay(100);
+//				}
+//			}
 }
 
 static void evade()

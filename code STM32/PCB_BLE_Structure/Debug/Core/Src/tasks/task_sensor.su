@@ -1,2 +1,2 @@
-../Core/Src/tasks/task_sensor.c:23:6:TaskToF	32	static
-../Core/Src/tasks/task_sensor.c:101:6:TaskLidar	24	static
+../Core/Src/tasks/task_sensor.c:24:6:TaskToF	24	static
+../Core/Src/tasks/task_sensor.c:63:6:TaskLidar	40	static

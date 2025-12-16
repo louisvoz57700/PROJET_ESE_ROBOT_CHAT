@@ -3,7 +3,7 @@
  * Description : PID + FeedForward (Anti-Stall) + Filtre Léger
  * =================================================================================== */
 
-#include "moteur.h"
+#include "actionneurs/moteur.h"
 #include <math.h>
 #include <stdlib.h>
 #include "cmsis_os.h"
@@ -213,7 +213,7 @@ static bool Motor_Move_PID(float target_speed_ticks, float target_deg_L, float t
 	uint32_t start_time = HAL_GetTick();
 	uint32_t prev_loop_time = HAL_GetTick();
 
-	while (1)
+	for(;;)
 	{
 		uint32_t now = HAL_GetTick();
 		float dt = (float)(now - prev_loop_time) / 1000.0f;

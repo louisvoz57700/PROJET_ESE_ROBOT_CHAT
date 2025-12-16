@@ -11,6 +11,7 @@
 #include "main.h"
 #include "capteurs/VL53L0X.h"
 #include "capteurs/lidar.h"
+#include "capteurs/multiplexer.h"
 #include "cmsis_os2.h"
 
 typedef struct{
@@ -21,20 +22,6 @@ typedef struct{
 	float A_Z;
 } Measure;
 
-typedef struct {
-	/*ToF*/
-	I2C_HandleTypeDef i2c;
-
-	bool vl53l0x_initialized;
-
-	int dist_gauche  ; // Canal 0
-	int dist_devant  ; // Canal 1
-	int dist_droite  ; // Canal 2
-	int dist_derriere; // Canal 3
-
-	osMutexId_t i2c_mutex;
-
-} ToF_t;
 
 /* Prototypes ADC & Maths */
 void INIT_ADC(uint16_t *adc_buffer, uint16_t size);
@@ -49,7 +36,7 @@ HAL_StatusTypeDef ADXL343_EnableSingleTap(void);
 
 /* Prototypes TCA9548A (Multiplexeur) */
 void TCA9548A_Init(void);
-void TCA9548A_SelectChannel(uint8_t channel);
+HAL_StatusTypeDef TCA9548A_SelectChannel(uint8_t channel);
 
 /* Prototypes VL53L0X */
 void ToF_Init(ToF_t *tof);

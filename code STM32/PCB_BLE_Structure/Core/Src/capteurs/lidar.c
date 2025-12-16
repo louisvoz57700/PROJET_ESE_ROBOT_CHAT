@@ -49,9 +49,8 @@ void YD_Start_UART_DMA(void)
 /* * Parser Principal
  * Lit le buffer circulaire, cherche l'en-tête, extrait les données et remplit 'vue'
  */
-void YD_Parser_MainLoop(Pos *vue_ptr, uint16_t dummy)
+void YD_Parser_MainLoop(Pos *vue_ptr)
 {
-    UNUSED(dummy);
     static const uint32_t MIN_FRAME_SIZE = 10;
 
     // Où le DMA a-t-il fini d'écrire ?
@@ -280,6 +279,7 @@ void segment_points(Pos *pts, uint16_t n_points) {
             if (compute_cluster(pts, start, n_points - 1, cluster_count)) cluster_count++;
         }
     }
+
 }
 
 
@@ -310,7 +310,7 @@ void LIDAR_Get_Closest_Cluster(Pos *target) {
             float c_ang = clusters[i].angle_center;
             if (c_ang > 180.0f) c_ang -= 360.0f;
 
-            float diff = fabsf(c_ang - prev_target.angle);
+            float diff = fabsf(c_ang - prev_target.Angle);
             if (diff > 180.0f) diff = 360.0f - diff;
 
             // Critères : Angle proche (+/- 30°) et Distance cohérente (+/- 20cm)
