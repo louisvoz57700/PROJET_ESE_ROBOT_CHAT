@@ -2,6 +2,15 @@
 #define VL53L0X_h
 
 
+
+typedef struct {
+	uint16_t front;
+	uint16_t back;
+	uint16_t right;
+	uint16_t left;
+
+} TOF;
+
 //------------------------------------------------------------
 // For quick and dirty C++ compatibility
 //------------------------------------------------------------

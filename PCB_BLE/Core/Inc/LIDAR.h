@@ -14,6 +14,34 @@
 #include <stdbool.h>
 #include <string.h>
 /////////
+
+
+
+typedef struct {
+    uint16_t num_samples;   // Nombre de samples
+    float start_angle;      // Angle de départ (en degrés ou radians)
+    float end_angle;        // Angle de fin (en degrés ou radians)
+    float precision;
+} AngleData;
+
+typedef struct {
+	uint16_t distance ;
+    float X ;
+    float Y;        // Angle de fin (en degrés ou radians)
+    float Angle;
+} Pos;
+
+typedef struct {
+    uint8_t active;        // 0 = vide, 1 = utilisé
+    uint16_t start_idx;    // index du premier point du cluster
+    uint16_t end_idx;      // index du dernier point
+    float x;             // barycentre X (fix-point ou int)
+    float y;             // barycentre Y
+    uint16_t size;         // nombre de points
+    uint8_t ttl;   // time-to-live
+    float angle
+} Cluster;
+
 void YD_Start_UART_DMA(void);
 void YD_Parser_MainLoop(Pos *vue);
 

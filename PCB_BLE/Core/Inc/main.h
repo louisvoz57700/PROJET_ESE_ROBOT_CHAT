@@ -35,13 +35,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-typedef struct{
-	float courant ;
-	float tension ;
-	float A_X;
-	float A_Y;
-	float A_Z;
-} Measure;
+
 
 typedef struct {
 	float X;
@@ -58,13 +52,7 @@ typedef struct {
 
 } Position;
 
-typedef struct {
-	uint16_t front;
-	uint16_t back;
-	uint16_t right;
-	uint16_t left;
 
-} TOF;
 
 typedef struct {
 	uint16_t PWM_R;
@@ -73,31 +61,6 @@ typedef struct {
 	uint8_t space ; // 0 = RAS , 1 = devant, 2 = derriere, 3 = droite, 4 = gauche
 } System_state;
 
-
-typedef struct {
-    uint16_t num_samples;   // Nombre de samples
-    float start_angle;      // Angle de départ (en degrés ou radians)
-    float end_angle;        // Angle de fin (en degrés ou radians)
-    float precision;
-} AngleData;
-
-typedef struct {
-	uint16_t distance ;
-    float X ;
-    float Y;        // Angle de fin (en degrés ou radians)
-    float Angle;
-} Pos;
-
-typedef struct {
-    uint8_t active;        // 0 = vide, 1 = utilisé
-    uint16_t start_idx;    // index du premier point du cluster
-    uint16_t end_idx;      // index du dernier point
-    float x;             // barycentre X (fix-point ou int)
-    float y;             // barycentre Y
-    uint16_t size;         // nombre de points
-    uint8_t ttl;   // time-to-live
-    float angle
-} Cluster;
 
 
 

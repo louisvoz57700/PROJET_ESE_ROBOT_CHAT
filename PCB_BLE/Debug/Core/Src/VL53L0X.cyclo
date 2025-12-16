@@ -18,7 +18,7 @@
 ../Core/Src/VL53L0X.c:760:6:startContinuous	3
 ../Core/Src/VL53L0X.c:798:6:stopContinuous	1
 ../Core/Src/VL53L0X.c:813:10:readRangeContinuousMillimeters	2
-../Core/Src/VL53L0X.c:858:10:readRangeSingleMillimeters	4
+../Core/Src/VL53L0X.c:859:10:readRangeSingleMillimeters	1
 ../Core/Src/VL53L0X.c:885:6:timeoutOccurred	1
 ../Core/Src/VL53L0X.c:892:6:setTimeout	1
 ../Core/Src/VL53L0X.c:896:10:getTimeout	1
