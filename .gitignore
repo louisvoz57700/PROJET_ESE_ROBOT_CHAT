@@ -1,113 +1,39 @@
-############################
-# macOS
-############################
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon?
-._*
-.Spotlight-V100
-.Trashes
-.fseventsd
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
 
-############################
-# KiCad
-############################
-# Fichiers temporaires
+# Temporary files
+*.000
 *.bak
-*.tmp
-*.bak*
-*.sch-bak
-*.kicad_sch-bak
+*.bck
 *.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*-cache*
+*-bak
+*-bak*
+*~
+~*
+_autosave-*
+\#auto_saved_files\#
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+
+# Netlist files (exported from Eeschema)
 *.net
+
+# Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
 
-# Dossiers générés
-fp-info-cache
-fp-lib-table
-sym-lib-table
-*.cache
-*-cache.lib
+# Exported BOM files
+*.xml
 
-# Fichiers de sauvegarde auto
-_autosave-*
-*.autosave
+# Archived Backups (KiCad 6.0)
+**/*-backups/*.zip
 
-# Sorties de fabrication
-*.gbr
-*.drl
-*.pos
-*.svg
-*.step
-*.stp
-
-############################
-# STM32CubeIDE
-############################
-# Dossiers IDE
-.settings/
-.metadata/
-Debug/
-Release/
-build/
-
-# Fichiers Eclipse / CubeIDE
-*.launch
-*.log
-*.tmp
-*.swp
-*.swo
-
-# Toolchain
-*.elf
-*.map
-*.hex
-*.bin
-
-############################
-# C / C++
-############################
-*.o
-*.a
-*.so
-*.d
-*.i
-
-############################
-# Python (si scripts)
-############################
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.venv/
-venv/
-
-############################
-# IDE / Éditeurs divers
-############################
-.vscode/
-.idea/
-*.code-workspace
-
-############################
-# Archives / exports
-############################
-*.zip
-*.tar
-*.tar.gz
-*.7z
-
-############################
-# Logs
-############################
-*.log
-
-############################
-# Divers
-############################
-*.orig
-*~
+# Local project settings
+*.kicad_prl
