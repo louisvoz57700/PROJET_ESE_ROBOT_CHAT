@@ -32,9 +32,9 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## 🛠️ Technologies utilisées (prévisionnel)
 
-- **Langages** : Python / C++  
-- **Frameworks & Librairies** : ROS, OpenCV, TensorFlow (selon besoins)  
-- **Matériel** : Arduino / Raspberry Pi / Capteurs & Actionneurs  
+- **Langages** : Python / C  
+- **Matériel** : STM32 / VL053 / LIDAR
+- **Fabrication** : JLCPCB / Imprimante 3D FDM / Fusion 360
 
 ---
 
@@ -49,18 +49,11 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ## ✅ To-Do List
 
-- [ ] algo de prise de decision
-- [ ] LIDAR
+- [x] algo de prise de decision
+- [x] LIDAR
 - [ ] app bluetooth
-- [ ] Compréhension de tout les capteurs
+- [x] Compréhension de tout les capteurs
 
-
----
-
-## 📌 Notes
-
-- Toute contribution doit passer par une **pull request**.  
-- Merci de respecter la **convention de nommage** et le style de code défini par l’équipe.
 
 ---
 
