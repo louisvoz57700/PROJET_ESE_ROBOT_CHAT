@@ -15,6 +15,22 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 
 ---
 
+## 📁 Structure du projet
+
+Ce dépôt est organisé de la manière suivante :
+## 📁 Arborescence du projet
+
+- `Datasheet/` : Contient les **documents techniques** des composants électroniques (datasheets, notes d’application, documents de référence).  
+
+- `Hardware/` : Contient la **conception matérielle**, incluant les projets KiCad (schémas, PCB, librairies locales) et fichiers liés à la fabrication (impression 3D).  
+
+- `IMG/` : Contient toutes les **images et illustrations** du projet (schémas explicatifs, rendus PCB, photos du prototype, captures pour la documentation).  
+
+- `Software/` : Contient le **code source / firmware**, y compris les projets STM32CubeIDE, le code embarqué (C/C++) et les scripts utilitaires éventuels.
+
+
+---
+
 ## 🎯 Objectifs du projet
 
 - Concevoir un **robot fonctionnel** (hardware + software).  
