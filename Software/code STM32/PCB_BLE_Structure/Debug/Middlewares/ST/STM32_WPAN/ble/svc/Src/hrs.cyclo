@@ -1,0 +1,5 @@
+../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c:89:30:HeartRate_Event_Handler	8
+../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c:206:19:Update_Char_BodySensorLocation	1
+../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c:225:19:Update_Char_Measurement	8
+../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c:395:6:HRS_Init	1
+../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c:567:12:HRS_UpdateChar	3

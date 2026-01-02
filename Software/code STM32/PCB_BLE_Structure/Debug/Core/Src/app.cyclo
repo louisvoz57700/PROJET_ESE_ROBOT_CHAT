@@ -1,0 +1,3 @@
+../Core/Src/app.c:33:6:app_init	2
+../Core/Src/app.c:58:6:app_task_init	1
+../Core/Src/app.c:117:6:HAL_GPIO_EXTI_Callback	3

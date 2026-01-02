@@ -528,7 +528,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../../../PROJET_ESE_ROBOT_CHAT/Hardware/Bluetooth/Board_STM32WB55/",
+      "plot": "../Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Main_Board.step",

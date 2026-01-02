@@ -589,6 +589,16 @@
 		(uuid "dfe8547c-b60c-4f43-b3c3-4d63d2021f47")
 	)
 	(label "I_bat"
+		(at 220.98 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ed7d197c-2f41-405d-b6f2-3908c143d81c")
+	)
+	(label "I_bat"
 		(at 97.79 61.214 0)
 		(effects
 			(font
@@ -1550,8 +1560,8 @@
 		)
 	)
 	(sheet
-		(at 215.9 26.67)
-		(size 63.246 127)
+		(at 220.98 26.67)
+		(size 58.166 127)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1566,7 +1576,7 @@
 		)
 		(uuid "67b3dae9-2f58-4b04-bd54-c58154e7c684")
 		(property "Sheetname" "Converters"
-			(at 215.9 25.9584 0)
+			(at 220.98 25.9584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,12 +1586,22 @@
 			)
 		)
 		(property "Sheetfile" "converters.kicad_sch"
-			(at 215.9 154.2546 0)
+			(at 220.98 154.2546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I_bat" input
+			(at 220.98 124.46 180)
+			(uuid "d834c085-ba20-4210-8235-a4660edd159f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
