@@ -62,8 +62,9 @@ Core/Src/capteurs/sensor.o: ../Core/Src/capteurs/sensor.c \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
  ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
  ../Core/Inc/capteurs/sensor.h ../Core/Inc/capteurs/VL53L0X.h \
- ../Core/Inc/capteurs/lidar.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Core/Inc/capteurs/lidar.h ../Core/Inc/capteurs/multiplexer.h \
+ ../Core/Inc/i2c.h ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -143,8 +144,11 @@ Core/Src/capteurs/sensor.o: ../Core/Src/capteurs/sensor.c \
 ../Core/Inc/app_common.h:
 ../Core/Inc/capteurs/sensor.h:
 ../Core/Inc/capteurs/VL53L0X.h:
-../Core/Inc/capteurs/lidar.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Core/Inc/capteurs/lidar.h:
+../Core/Inc/capteurs/multiplexer.h:
+../Core/Inc/i2c.h:
+../Core/Inc/main.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:

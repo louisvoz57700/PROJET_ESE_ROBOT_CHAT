@@ -2,12 +2,30 @@
 #define VL53L0X_h
 
 
-//------------------------------------------------------------
-// For quick and dirty C++ compatibility
-//------------------------------------------------------------
-#define bool  uint8_t
-#define true  1
-#define false 0
+#include "capteurs/sensor.h"
+#include "cmsis_os2.h"
+typedef struct {
+	/*ToF*/
+	I2C_HandleTypeDef i2c;
+
+	uint8_t vl53l0x_initialized;
+
+	uint16_t front  ; // Canal 0
+	uint16_t back  ; // Canal 1
+	uint16_t right  ; // Canal 2
+	uint16_t left; // Canal 3
+
+	osMutexId_t i2c_mutex;
+
+} ToF_t;
+
+void mesure_TOF(ToF_t *tof);
+////------------------------------------------------------------
+//// For quick and dirty C++ compatibility
+////------------------------------------------------------------
+//#define uint8_t  uint8_t
+//#define true  1
+//#define false 0
 
 //------------------------------------------------------------
 // Defines
@@ -136,22 +154,24 @@ typedef struct{
 //------------------------------------------------------------
 // API Functions
 //------------------------------------------------------------
+
+
 // configures chip i2c and lib for `new_addr` (8 bit, LSB=0)
 void setAddress_VL53L0X(uint8_t new_addr);
 // Returns the current I²C address.
 uint8_t getAddress_VL53L0X(void);
 
-// Iniitializes and configures the sensor. 
-// If the optional argument io_2v8 is 1, the sensor is configured for 2V8 mode (2.8 V I/O); 
+// Iniitializes and configures the sensor.
+// If the optional argument io_2v8 is 1, the sensor is configured for 2V8 mode (2.8 V I/O);
 // if 0, the sensor is left in 1V8 mode. Returns 1 if the initialization completed successfully.
-uint8_t initVL53L0X(bool io_2v8, I2C_HandleTypeDef *handler);
+uint8_t initVL53L0X(uint8_t io_2v8, I2C_HandleTypeDef *handler);
 
-// Sets the return signal rate limit to the given value in units of MCPS (mega counts per second). 
-// This is the minimum amplitude of the signal reflected from the target and received by the sensor 
-//  necessary for it to report a valid reading. Setting a lower limit increases the potential range 
-// of the sensor but also increases the likelihood of getting an inaccurate reading because of 
-//  reflections from objects other than the intended target. This limit is initialized to 0.25 MCPS 
-//  by default. The return value is a boolean indicating whether the requested limit was valid.
+// Sets the return signal rate limit to the given value in units of MCPS (mega counts per second).
+// This is the minimum amplitude of the signal reflected from the target and received by the sensor
+//  necessary for it to report a valid reading. Setting a lower limit increases the potential range
+// of the sensor but also increases the likelihood of getting an inaccurate reading because of
+//  reflections from objects other than the intended target. This limit is initialized to 0.25 MCPS
+//  by default. The return value is a uint8_tean indicating whether the requested limit was valid.
 uint8_t setSignalRateLimit(float limit_Mcps);
 
 // Returns the current return signal rate limit in MCPS.
@@ -170,19 +190,19 @@ uint8_t setMeasurementTimingBudget(uint32_t budget_us);
 uint32_t getMeasurementTimingBudget(void);
 
 // Sets the VCSEL (vertical cavity surface emitting laser) pulse period for the given period type
-// (VcselPeriodPreRange or VcselPeriodFinalRange) to the given value (in PCLKs). 
+// (VcselPeriodPreRange or VcselPeriodFinalRange) to the given value (in PCLKs).
 // Longer periods increase the potential range of the sensor. Valid values are (even numbers only):
 // Pre: 12 to 18 (initialized to 14 by default)
 // Final: 8 to 14 (initialized to 10 by default)
-// The return value is a boolean indicating whether the requested period was valid.
+// The return value is a uint8_tean indicating whether the requested period was valid.
 uint8_t setVcselPulsePeriod(vcselPeriodType type, uint8_t period_pclks);
 
 // Returns the current VCSEL pulse period for the given period type.
 uint8_t getVcselPulsePeriod(vcselPeriodType type);
 
-// Starts continuous ranging measurements. If the argument period_ms is 0, 
-// continuous back-to-back mode is used (the sensor takes measurements as often as possible); 
-// if it is nonzero, continuous timed mode is used, with the specified inter-measurement period 
+// Starts continuous ranging measurements. If the argument period_ms is 0,
+// continuous back-to-back mode is used (the sensor takes measurements as often as possible);
+// if it is nonzero, continuous timed mode is used, with the specified inter-measurement period
 // in milliseconds determining how often the sensor takes a measurement.
 void startContinuous(uint32_t period_ms);
 
@@ -197,7 +217,7 @@ uint16_t readRangeContinuousMillimeters( statInfo_t_VL53L0X *extraStats );
 // Additional measurement data will be copied into `extraStats` if it is non-zero.
 uint16_t readRangeSingleMillimeters( statInfo_t_VL53L0X *extraStats );
 
-// Sets a timeout period in milliseconds after which read operations will abort 
+// Sets a timeout period in milliseconds after which read operations will abort
 // if the sensor is not ready. A value of 0 disables the timeout.
 void setTimeout(uint16_t timeout);
 
@@ -205,7 +225,7 @@ void setTimeout(uint16_t timeout);
 uint16_t getTimeout(void);
 
 // Indicates whether a read timeout has occurred since the last call to timeoutOccurred().
-bool timeoutOccurred(void);
+uint8_t timeoutOccurred(void);
 
 //---------------------------------------------------------
 // I2C communication Functions

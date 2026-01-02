@@ -126,8 +126,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
  ../Core/Inc/tasks/task_FSM.h ../Core/Inc/tasks/task_sensor.h \
  ../Core/Inc/capteurs/sensor.h ../Core/Inc/capteurs/VL53L0X.h \
- ../Core/Inc/capteurs/lidar.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Core/Inc/capteurs/lidar.h ../Core/Inc/capteurs/multiplexer.h \
  ../Core/Inc/tasks/task_comm.h ../Core/Inc/actionneurs/oled.h \
  ../Core/Inc/tasks/task_control.h ../Core/Inc/actionneurs/moteur.h
 ../Core/Inc/main.h:
@@ -273,8 +273,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tasks/task_sensor.h:
 ../Core/Inc/capteurs/sensor.h:
 ../Core/Inc/capteurs/VL53L0X.h:
-../Core/Inc/capteurs/lidar.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Core/Inc/capteurs/lidar.h:
+../Core/Inc/capteurs/multiplexer.h:
 ../Core/Inc/tasks/task_comm.h:
 ../Core/Inc/actionneurs/oled.h:
 ../Core/Inc/tasks/task_control.h:

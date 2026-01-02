@@ -49,9 +49,8 @@ void YD_Start_UART_DMA(void)
 /* * Parser Principal
  * Lit le buffer circulaire, cherche l'en-tête, extrait les données et remplit 'vue'
  */
-void YD_Parser_MainLoop(Pos *vue_ptr, uint16_t dummy)
+void YD_Parser_MainLoop(Pos *vue_ptr)
 {
-    UNUSED(dummy);
     static const uint32_t MIN_FRAME_SIZE = 10;
 
     // Où le DMA a-t-il fini d'écrire ?
@@ -280,4 +279,110 @@ void segment_points(Pos *pts, uint16_t n_points) {
             if (compute_cluster(pts, start, n_points - 1, cluster_count)) cluster_count++;
         }
     }
+
 }
+
+
+/////////////////// LOGIQUE DE CIBLE (TRACKING + BLIND SPOT) ///////////////
+
+void LIDAR_Get_Closest_Cluster(Pos *target) {
+
+    // Mémoire statique
+    static Pos prev_target = {0};
+    static uint8_t lost_counter = 0;
+    const uint8_t MAX_LOST = 10;
+
+    // --- CONFIGURATION ---
+    const float BLIND_SPOT_DIST = 200.0f; // Si < 20cm, on active la protection
+    const float BLIND_SPOT_FAKE_DIST = 50.0f; // Distance simulée pour forcer l'impact
+
+    int8_t best_idx = -1;
+
+    // --- ÉTAPE 1 : TRACKING ---
+    // On essaie de retrouver le cluster qu'on suivait au tour précédent
+    int8_t tracked_idx = -1;
+    float min_diff_angle = 1000.0f;
+
+    if (prev_target.detected) {
+        for (int i = 0; i < cluster_count; i++) {
+            if (!clusters[i].active) continue;
+
+            float c_ang = clusters[i].angle_center;
+            if (c_ang > 180.0f) c_ang -= 360.0f;
+
+            float diff = fabsf(c_ang - prev_target.Angle);
+            if (diff > 180.0f) diff = 360.0f - diff;
+
+            // Critères : Angle proche (+/- 30°) et Distance cohérente (+/- 20cm)
+            if (diff < 30.0f && abs((int)clusters[i].dist_min - (int)prev_target.distance) < 200) {
+                if (diff < min_diff_angle) {
+                    min_diff_angle = diff;
+                    tracked_idx = i;
+                }
+            }
+        }
+    }
+
+    // --- ÉTAPE 2 : SÉLECTION ---
+    if (tracked_idx != -1) {
+        // Cible retrouvée -> On reste dessus
+        best_idx = tracked_idx;
+        lost_counter = 0;
+    }
+    else {
+        // Cible perdue ! Vérification ZONE AVEUGLE
+        if (prev_target.detected && prev_target.distance < BLIND_SPOT_DIST) {
+            // La cible était proche et elle a disparu -> Elle est collée à nous !
+            // On force les valeurs pour l'attaque
+            target->detected = 1;
+            target->distance = BLIND_SPOT_FAKE_DIST;
+            target->Angle = prev_target.Angle; // On garde le cap
+
+            // Mise à jour mémoire pour le cycle suivant
+            prev_target = *target;
+            lost_counter = 0;
+            return; // Fin immédiate
+        }
+
+        // Sinon, c'est une vraie perte (objet parti ou mouvement brusque)
+        lost_counter++;
+
+        if (lost_counter > MAX_LOST) {
+            // Après X cycles perdus, on scanne tout pour trouver le nouveau plus proche
+            float min_d = 100000.0f;
+            for (int i = 0; i < cluster_count; i++) {
+                if (!clusters[i].active) continue;
+                if (clusters[i].dist_min < min_d) {
+                    min_d = clusters[i].dist_min;
+                    best_idx = i;
+                }
+            }
+        } else {
+            // Anti-clignotement : on ne fait rien, on garde l'état précédent implicitement
+            // (Note: ici target n'est pas mis à jour, donc le main utilisera l'ancienne valeur si on ne reset pas detected)
+            // Pour être propre, on peut renvoyer l'ancienne cible si < MAX_LOST
+            if (prev_target.detected) {
+                *target = prev_target;
+                return;
+            }
+        }
+    }
+
+    // --- ÉTAPE 3 : MISE À JOUR FINALE ---
+    if (best_idx != -1) {
+        float raw_ang = clusters[best_idx].angle_center;
+        if (raw_ang > 180.0f) raw_ang -= 360.0f;
+
+        target->detected = 1;
+        target->distance = (float)clusters[best_idx].dist_min;
+        target->Angle = raw_ang;
+
+        prev_target = *target;
+        lost_counter = 0;
+    } else {
+        // Rien trouvé, et timeout écoulé
+        target->detected = 0;
+        prev_target.detected = 0;
+    }
+}
+

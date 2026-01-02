@@ -1,2 +1,2 @@
-../Core/Src/tasks/task_comm.c:12:13:drawRoleOLED	16	static
-../Core/Src/tasks/task_comm.c:37:6:TaskCommuncation	24	static
+../Core/Src/tasks/task_comm.c:15:13:drawRoleOLED	16	static
+../Core/Src/tasks/task_comm.c:40:6:TaskCommuncation	24	static

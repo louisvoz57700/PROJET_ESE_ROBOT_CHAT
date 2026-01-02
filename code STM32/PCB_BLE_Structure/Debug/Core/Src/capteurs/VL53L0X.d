@@ -1,4 +1,5 @@
 Core/Src/capteurs/VL53L0X.o: ../Core/Src/capteurs/VL53L0X.c \
+ ../Core/Inc/capteurs/sensor.h ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../Core/Inc/stm32wbxx_hal_conf.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \
@@ -45,7 +46,28 @@ Core/Src/capteurs/VL53L0X.o: ../Core/Src/capteurs/VL53L0X.c \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
- ../Core/Inc/capteurs/VL53L0X.h
+ ../Core/Inc/app_conf.h \
+ ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h \
+ ../Core/Inc/hw_conf.h ../Core/Inc/FreeRTOSConfig.h ../Core/Inc/hw_if.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_ipcc.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_utils.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_gpio.h \
+ ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
+ ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
+ ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
+ ../Core/Inc/capteurs/VL53L0X.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Core/Inc/capteurs/lidar.h ../Core/Inc/capteurs/multiplexer.h \
+ ../Core/Inc/i2c.h ../Core/Inc/main.h
+../Core/Inc/capteurs/sensor.h:
+../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h:
@@ -92,4 +114,28 @@ Core/Src/capteurs/VL53L0X.o: ../Core/Src/capteurs/VL53L0X.c \
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_uart_ex.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
+../Core/Inc/app_conf.h:
+../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/hw.h:
+../Core/Inc/hw_conf.h:
+../Core/Inc/FreeRTOSConfig.h:
+../Core/Inc/hw_if.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_ipcc.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_utils.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_gpio.h:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h:
+../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h:
+../Core/Inc/app_entry.h:
+../Core/Inc/app_common.h:
 ../Core/Inc/capteurs/VL53L0X.h:
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Core/Inc/capteurs/lidar.h:
+../Core/Inc/capteurs/multiplexer.h:
+../Core/Inc/i2c.h:
+../Core/Inc/main.h:

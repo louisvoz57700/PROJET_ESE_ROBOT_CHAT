@@ -15,31 +15,24 @@
 #include <string.h>
 
 /* --- VARIABLES GLOBALES ACCESSIBLES (DEBUG & DATA) --- */
-/* Compteur incrémenté à chaque trame valide reçue (Heartbeat) */
-extern volatile uint32_t lidar_frame_count;
 
 /* --- DÉFINITIONS ET CONFIGURATION --- */
-#define FACTEUR              2
-#define MAX_SAMPLES_PER_PKT  200U
-#define N_ANGLES             (360 * FACTEUR)
+#define FACTEUR 1
+#define MAX_SAMPLES_PER_PKT  200U      // max samples par trame
+#define N_ANGLES   (360 * FACTEUR)     // 0.1° resolution pour 0°-360°
+#define X_MAX 600// Taille maximale en X en mm
+#define Y_MAX 1500  // Taille maximale en Y en mm
+#define MAX_RANGE_LIDAR 200 // Cercle de 25 cm
+#define MAX_POINTS      (360 * FACTEUR)   // exemple : 1 tour LiDAR = 720 mesures
+#define MAX_CLUSTERS       20
+#define DIST_THRESHOLD     300     // 30 cm en mm
+#define MERGE_THRESHOLD    100.0f  // si barycentres < 100 mm => fusion
+#define MIN_VALID_DISTANCE 50u     // distance minimale (mm) pour considérer un point valide
+#define MIN_CLUSTER_DIST   20.0f   // ignorer barycentre à moins de 20 mm de l'origine
+#define DMA_BYTE_BUF_SIZE    300U      // taille du buffer DMA circulaire
+#define CLUSTER_MARGIN 2
+#define CLUSTER_PERSISTENCE 3
 
-/* Limites de la zone de détection (en mm) */
-#define X_MAX                600
-#define Y_MAX                1500
-#define MAX_RANGE_LIDAR      500
-
-/* Paramètres de clustering */
-#define MAX_POINTS           720
-#define MAX_CLUSTERS         20
-#define DIST_THRESHOLD       300     // 30 cm
-#define MERGE_THRESHOLD      100.0f  // Fusion si < 10 cm
-#define MIN_VALID_DISTANCE   50u     // Ignore les points trop proches (< 5 cm)
-#define MIN_CLUSTER_DIST     20.0f   // Ignore bruit au centre
-#define CLUSTER_MARGIN       2
-#define CLUSTER_PERSISTENCE  3
-
-/* Buffer DMA */
-#define DMA_BYTE_BUF_SIZE    300U
 
 /* Constante PI si non définie */
 #ifndef M_PI
@@ -48,26 +41,34 @@ extern volatile uint32_t lidar_frame_count;
 
 /* --- STRUCTURES --- */
 
+typedef struct {
+    uint16_t num_samples;   // Nombre de samples
+    float start_angle;      // Angle de départ (en degrés ou radians)
+    float end_angle;        // Angle de fin (en degrés ou radians)
+    float precision;
+} AngleData;
+
 /* Structure d'un point lidar */
 typedef struct {
     float distance;
     float Angle;
     float X;
     float Y;
+    uint8_t detected; // 1 ou 0
 } Pos;
 
-/* Structure d'un objet détecté (Cluster) */
+// Structure Cluster
 typedef struct {
     uint16_t start_idx;
     uint16_t end_idx;
     uint16_t size;
-    float x;
-    float y;
+    float x, y;
+    float angle_center;
+    uint16_t dist_min;
     uint8_t active;
+    float angle;
 } Cluster;
 
-/* Déclaration externe du tableau pour qu'il soit visible dans le main */
-extern Pos vue[N_ANGLES];
 
 /* --- PROTOTYPES PUBLICS --- */
 
@@ -75,9 +76,14 @@ extern Pos vue[N_ANGLES];
 void YD_Start_UART_DMA(void);
 
 /* Fonction principale de parsing (à appeler dans la boucle/tâche) */
-void YD_Parser_MainLoop(Pos *vue, uint16_t dummy);
+void YD_Parser_MainLoop(Pos *vue);
 
 /* Fonction de segmentation (création des clusters) */
 void segment_points(Pos *points, uint16_t n_points);
+
+void LIDAR_Get_Closest_Cluster(Pos *target);
+
+///////////////////DEFINE/////////////////
+
 
 #endif /* INC_LIDAR_H_ */

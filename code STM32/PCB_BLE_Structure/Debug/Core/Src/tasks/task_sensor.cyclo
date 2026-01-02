@@ -1,2 +1,2 @@
-../Core/Src/tasks/task_sensor.c:23:6:TaskToF	11
-../Core/Src/tasks/task_sensor.c:101:6:TaskLidar	1
+../Core/Src/tasks/task_sensor.c:24:6:TaskToF	3
+../Core/Src/tasks/task_sensor.c:63:6:TaskLidar	1
