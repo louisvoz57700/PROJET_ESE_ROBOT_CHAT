@@ -18,7 +18,6 @@ Ce projet a pour but de concevoir et développer un **robot intelligent** capabl
 ## 📁 Structure du projet
 
 Ce dépôt est organisé de la manière suivante :
-## 📁 Arborescence du projet
 
 - `Datasheet/` : Contient les **documents techniques** des composants électroniques (datasheets, notes d’application, documents de référence).  
 
