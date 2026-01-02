@@ -1,0 +1,113 @@
+############################
+# macOS
+############################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+############################
+# KiCad
+############################
+# Fichiers temporaires
+*.bak
+*.tmp
+*.bak*
+*.sch-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.net
+*.dsn
+*.ses
+
+# Dossiers générés
+fp-info-cache
+fp-lib-table
+sym-lib-table
+*.cache
+*-cache.lib
+
+# Fichiers de sauvegarde auto
+_autosave-*
+*.autosave
+
+# Sorties de fabrication
+*.gbr
+*.drl
+*.pos
+*.svg
+*.step
+*.stp
+
+############################
+# STM32CubeIDE
+############################
+# Dossiers IDE
+.settings/
+.metadata/
+Debug/
+Release/
+build/
+
+# Fichiers Eclipse / CubeIDE
+*.launch
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Toolchain
+*.elf
+*.map
+*.hex
+*.bin
+
+############################
+# C / C++
+############################
+*.o
+*.a
+*.so
+*.d
+*.i
+
+############################
+# Python (si scripts)
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+############################
+# IDE / Éditeurs divers
+############################
+.vscode/
+.idea/
+*.code-workspace
+
+############################
+# Archives / exports
+############################
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+############################
+# Logs
+############################
+*.log
+
+############################
+# Divers
+############################
+*.orig
+*~
