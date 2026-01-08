@@ -1,0 +1,3 @@
+../Core/Src/capteurs/multiplexer.c:16:19:TCA9548A_Init	2
+../Core/Src/capteurs/multiplexer.c:35:19:TCA9548A_SelectChannel	2
+../Core/Src/capteurs/multiplexer.c:47:19:TCA9548A_DisableAll	1

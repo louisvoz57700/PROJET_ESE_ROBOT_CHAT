@@ -1,0 +1,6 @@
+../Core/Src/capteurs/lidar.c:36:17:get_dma_write_index	4	static
+../Core/Src/capteurs/lidar.c:45:6:YD_Start_UART_DMA	8	static
+../Core/Src/capteurs/lidar.c:51:6:YD_Parser_MainLoop	592	static
+../Core/Src/capteurs/lidar.c:145:5:compute_cluster	112	static
+../Core/Src/capteurs/lidar.c:223:6:segment_points	32	static
+../Core/Src/capteurs/lidar.c:264:6:LIDAR_Get_Closest_Cluster	64	static
