@@ -1,0 +1,5 @@
+../Core/Src/lidar.c:33:17:get_dma_write_index	4	static
+../Core/Src/lidar.c:44:6:YD_Start_UART_DMA	8	static
+../Core/Src/lidar.c:52:6:YD_Parser_MainLoop	592	static
+../Core/Src/lidar.c:184:5:compute_cluster	96	static
+../Core/Src/lidar.c:244:6:segment_points	32	static
