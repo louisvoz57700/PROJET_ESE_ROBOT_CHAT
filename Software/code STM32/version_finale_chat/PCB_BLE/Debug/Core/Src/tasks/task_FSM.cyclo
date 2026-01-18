@@ -1,3 +1,0 @@
-../Core/Src/tasks/task_FSM.c:42:13:obstacle_avoid	7
-../Core/Src/tasks/task_FSM.c:73:13:evade	1
-../Core/Src/tasks/task_FSM.c:80:6:TaskFSM	17

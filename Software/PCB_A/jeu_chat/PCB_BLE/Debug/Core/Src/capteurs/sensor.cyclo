@@ -1,0 +1,10 @@
+../Core/Src/capteurs/sensor.c:50:6:INIT_ADC	2
+../Core/Src/capteurs/sensor.c:61:6:UPDATE_V_I	1
+../Core/Src/capteurs/sensor.c:77:19:ADXL343_WriteReg	1
+../Core/Src/capteurs/sensor.c:83:19:ADXL343_ReadReg	1
+../Core/Src/capteurs/sensor.c:89:19:ADXL343_ReadMulti	1
+../Core/Src/capteurs/sensor.c:95:19:ADXL343_EnableSingleTap	7
+../Core/Src/capteurs/sensor.c:107:19:ADXL343_Init	9
+../Core/Src/capteurs/sensor.c:134:19:ADXL343_ReadXYZ	3
+../Core/Src/capteurs/sensor.c:186:6:I2C_ResetBus	2
+../Core/Src/capteurs/sensor.c:220:6:check_single_tap	1

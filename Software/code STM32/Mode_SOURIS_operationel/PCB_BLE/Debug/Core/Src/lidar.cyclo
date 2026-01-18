@@ -1,7 +1,0 @@
-../Core/Src/lidar.c:34:6:YD_Start_UART_DMA	1
-../Core/Src/lidar.c:38:17:get_dma_write_index	1
-../Core/Src/lidar.c:43:13:filter_noise_and_fill_gaps	7
-../Core/Src/lidar.c:61:6:YD_Parser_MainLoop	19
-../Core/Src/lidar.c:144:6:add_cluster	2
-../Core/Src/lidar.c:156:6:segment_points	15
-../Core/Src/lidar.c:223:6:LIDAR_Get_Closest_Cluster	20
