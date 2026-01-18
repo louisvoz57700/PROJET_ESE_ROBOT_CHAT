@@ -7,7 +7,7 @@ Les étapes : aller sur stm32CubeProgrammer et on upgrade les firmware, on n'oub
 
 Puis sur stm32CubeIde, on va aller créer un service qui peut écrire et lire.
 
-On rajoute une fonction pour interpréter les notifications : ( La fonction est ici : (Software/PCB_A/Preuve_BLE/BLE/STM32_WPAN/App/custom_app.c))
+On rajoute une fonction pour interpréter les notifications (la fonction est ici : [custom_app.c](Software/PCB_A/Preuve_BLE/BLE/STM32_WPAN/App/custom_app.c))
 
 Rajoutons un message : "Hello Laurent Fiack from antonio, Louis, Kenny et thomas!", qu'on va lire sur notre téléphone pour tester la connexion.
 
