@@ -42,10 +42,10 @@ La section se trouve ici : [code](PCB_A/jeu_chat/PCB_BLE)
 #### Fonctionnement : 
 Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionner grâce à 4 tâches : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/tasks)
 
- * task_FSM.c : c'est notre machine à état.
- * task_comm.c : utilisé pour l'écran, l'écran passe de l'image d'une souris à celle d'un chat suivant le mode de jeu choisis.
- * task_control.c : mode chat, définit la façon pour attraper la souris. (Mode souris ici fonctionne, est décrite dans task_FSM, on lui fait faire seulement un carré par manque de temps).
- * task_sensor.c : Lidar + tof
+ * task_FSM.c : c'est notre machine à état.   (attr.priority   = BASE_PRIO + 4;)
+ * task_comm.c : utilisé pour l'écran, l'écran passe de l'image d'une souris à celle d'un chat suivant le mode de jeu choisis. (attr.priority   = BASE_PRIO +  1;)
+ * task_control.c : mode chat, définit la façon pour attraper la souris. (Mode souris ici fonctionne, est décrite dans task_FSM, on lui fait faire seulement un carré par manque de temps). (attr.priority   = BASE_PRIO + 5;)
+ * task_sensor.c : Lidar + tof ( lidar : attr.priority   = BASE_PRIO + 3; et tof : attr.priority   = BASE_PRIO + 2;)
 
 #### Capteurs et actionneurs :
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
@@ -59,6 +59,15 @@ Test du carré sur odométrie suffisante :
 
 
 https://github.com/user-attachments/assets/7094cc9a-a563-437a-8e9e-69ce3a43d382
+
+
+mode chat : 
+
+
+
+https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
+
+
 
 
 ## PCB_B : version G431 + module bluetooth externe
