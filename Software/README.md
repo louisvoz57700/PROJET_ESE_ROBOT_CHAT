@@ -50,7 +50,7 @@ Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionn
 #### Capteurs et actionneurs :
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
 
-La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
+La logique de tous nos actionneurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
 
 Notre odométrie et notre PID se trouvent dans le fichier suivant : [odométrie + PID](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs/moteur.c)
 Dans le même fichier, on y retrouvera 2 fonctions utiles à nos déplacements Robot_Translation et Robot_Rotation qui peuvent être appelées et qui nous servent pour la chasse ainsi que pour la fuite.
