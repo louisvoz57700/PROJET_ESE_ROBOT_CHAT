@@ -1,4 +1,5 @@
 ## PCB_A : version WB55
+### Partie Bluetooth
 La section Software/PCB_A/Preuve_BLE/BLE est la section de notre code de preuve de notre antenne Bluetooth intégrée à notre PCB. Tout fonctionne ! Notre code est ici :[code](PCB_A/Preuve_BLE/BLE)
 
 Ce qu'on a fait : on a suivi la vidéo suivante : STM32 Bluetooth Firmware Tutorial (Bring-Up) - Phil's Lab #129
@@ -34,5 +35,8 @@ Ce qui donne en (ASCII) :
 Hello Laurent Fiack from antonio, Louis, Kenny et thomas!
 
 C'est bien le message qu'on avait envoyé !
+
+### Partie FreeRtos
+La section se trouve ici : [code](PCB_A/Preuve_BLE/BLE)
 
 ## PCB_B : version G431 + module bluetooth externe
