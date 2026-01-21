@@ -37,6 +37,6 @@ Hello Laurent Fiack from antonio, Louis, Kenny et thomas!
 C'est bien le message qu'on avait envoyé !
 
 ### Partie FreeRtos
-La section se trouve ici : [code](PCB_A/Preuve_BLE/BLE)
+La section se trouve ici : [code](PCB_A/jeu_chat/PCB_BLE)
 
 ## PCB_B : version G431 + module bluetooth externe
