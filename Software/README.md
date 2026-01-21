@@ -1,5 +1,5 @@
 ## PCB_A : version WB55
-La section Software/PCB_A/Preuve_BLE/BLE est la section de notre code de preuve de notre antenne Bluetooth intégrée à notre PCB. Tout fonctionne ! Notre code est ici :[code](Software/PCB_A/Preuve_BLE/BLE)
+La section Software/PCB_A/Preuve_BLE/BLE est la section de notre code de preuve de notre antenne Bluetooth intégrée à notre PCB. Tout fonctionne ! Notre code est ici :[code](PCB_A/Preuve_BLE/BLE)
 
 Ce qu'on a fait : on a suivi la vidéo suivante : STM32 Bluetooth Firmware Tutorial (Bring-Up) - Phil's Lab #129
 
