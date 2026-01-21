@@ -52,5 +52,13 @@ La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_c
 
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
 
-Notre odométrie se trouve dans le fichier suivant [odométrie](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs/moteur.c)
+Notre odométrie et notre PID se trouvent dans le fichier suivant : [odométrie + PID](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs/moteur.c)
+Dans le même fichier, on y retrouvera 2 fonctions utiles à nos déplacements Robot_Translation et Robot_Rotation qui peuvent être appelées et qui nous servent pour la chasse ainsi que pour la fuite.
+
+Test du carré sur odométrie suffisante : 
+
+
+https://github.com/user-attachments/assets/7094cc9a-a563-437a-8e9e-69ce3a43d382
+
+
 ## PCB_B : version G431 + module bluetooth externe
