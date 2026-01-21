@@ -51,4 +51,6 @@ Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionn
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
 
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
+
+Notre odométrie se trouve dans le fichier suivant [odométrie](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs/moteur.c)
 ## PCB_B : version G431 + module bluetooth externe
