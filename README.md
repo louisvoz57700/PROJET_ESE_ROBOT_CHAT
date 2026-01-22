@@ -55,35 +55,13 @@ Ce dépôt est organisé de la manière suivante :
 
 ## 📅 Organisation
 
-- **Phase 1** : Étude et conception  
-- **Phase 2** : Développement hardware & software  
-- **Phase 3** : Intégration et tests  
-- **Phase 4** : Présentation finale  
+- ** Phase 1 (Début Septembre)**: Étude et conception
+Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](link.com).
+- ** Phase 2 (Mi-Septembre à Mi-Octobre)** : Développement hardware & software
+Nous avons réalisé le developpement hardware du projet en 3 semaines et nous avons ensuite concentré nos efforts sur le développement des blocks individuels du software embarqué.
+- ** Phase 3 (Décembre)** : Intégration et tests
+Nous avons intégrés et adaptés les différents blocks des capteurs et actionneurs dans le [code résultant](secondlink.com). 
+- ** Phase 4  (Janvier) ** : Présentation finale
+Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des [extraits vidéos](thirdlink.com) montrant le résultat de nos travaux.  
 
----
-
-## ✅ To-Do List
-
-- [x] algo de prise de decision
-- [x] LIDAR
-- [ ] app bluetooth
-- [x] Compréhension de tout les capteurs
-
-
----
-
-## Résumé des séances :
-### Séance du 19 / 09 :
-
-- Nous avons continuer les PCB (G431 et WB55) et fait le schéma de principe
-- Prise en main du capteur LIDAR
-
-### Séance du 23 / 09 :
-
-- Nous avons finis les PCB (Routage + Schematic) avec vérification du professeur
-- Fais la 3D sur le robot avec intégration des capteurs TOF
-
-### Séance du 24 / 09 :
-
-- Nous avons implémenté une connexion bluetooth entre la stm32WB15CC et notre téléphone avec ST BLE Toolbox
 
