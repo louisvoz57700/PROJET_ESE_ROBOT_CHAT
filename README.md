@@ -33,14 +33,13 @@ Ce dépôt est organisé de la manière suivante :
 ## 📅 Organisation
 
 - **Phase 1 (Début Septembre)** : Étude et conception
-Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](link.com).
+Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](./Hardware).
 - **Phase 2 (Mi-Septembre à Mi-Octobre)** : Développement hardware & software
 Nous avons réalisé le developpement hardware du projet en 3 semaines et nous avons ensuite concentré nos efforts sur le développement des blocks individuels du software embarqué.
 - **Phase 3 (Décembre)** : Intégration et tests
-Nous avons intégrés et adaptés les différents blocks des capteurs et actionneurs dans le [code résultant](secondlink.com). 
+Nous avons intégrés et adaptés les différents blocks des capteurs et actionneurs dans le [code résultant](./Software). 
 - **Phase 4  (Janvier)** : Présentation finale
-Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des [extraits vidéos](thirdlink.com) montrant le résultat de nos travaux.  
-
+Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des extraits vidéos montrant le résultat de nos travaux.  
 
 ---
 ## Schéma de Principe
