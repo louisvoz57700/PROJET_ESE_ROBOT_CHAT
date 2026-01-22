@@ -26,9 +26,9 @@ Les principaux composants intégrés sont :
 ---
 
 <p align="center">
-  <img src="../IMG/PCB_BLE_Kicad_3D_Up.png" width="32%" />
-  <img src="../IMG/PCB_BLE_Kicad.png" width="32%" />
-  <img src="../IMG/PCB_BLE_Kicad_3D_Down.png" width="32%" />
+  <img src="images/image.png" width="32%" />
+  <img src="images/image-1.png" width="32%" />
+  <img src="images/image-2.png" width="32%" />
 </p>
 
 ---
