@@ -20,7 +20,7 @@ On se connecte sur notre carte :
 
 puis on rejoins notre service : 
 
-![WhatsApp Image 2026-01-18 at 17 41 05 (1)](https://github.com/user-attachments/assets/b9da0ccb-70c2-45dc-b032-6d7ef8b4ab2d){ width: 200px; }
+![WhatsApp Image 2026-01-18 at 17 41 05 (1)](https://github.com/user-attachments/assets/b9da0ccb-70c2-45dc-b032-6d7ef8b4ab2d)
 
 On regarde le message reçu :
 
