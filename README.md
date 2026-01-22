@@ -1,16 +1,16 @@
 # 🤖 PROJET_ESE_ROBOT_CHAT
 
 Bienvenue dans le repository de notre projet de 3ème année.  
-Ce projet a pour but de concevoir et développer un **robot intelligent** capable d’interagir et d’échanger de manière autonome.  
+Ce projet a pour but de concevoir et développer un **robot intelligent** capable d’interagir et d’échanger de manière autonome dans le cadre du jeu "Chat".  
 
 ---
 
 ## 👥 Membres de l’équipe
 
-- [Kenny Saint Fleur](https://github.com/Kennystflr)  
 - [Louis Vozzola](https://github.com/louisvoz57700)  
 - [Antoine LEMARIGNIER](https://github.com/LEMARIGNIER-Antoine)  
-- [Thomas TERLINDEN](https://github.com/TTrld)  
+- [Thomas TERLINDEN](https://github.com/TTrld)
+- [Kenny Saint Fleur](https://github.com/Kennystflr)  
 
 
 ---
@@ -30,12 +30,17 @@ Ce dépôt est organisé de la manière suivante :
 
 ---
 
-## 🎯 Objectifs du projet
+## 📅 Organisation
 
-- Concevoir un **robot fonctionnel** (hardware + software).  
-- Développer un **système de communication** entre le robot et un utilisateur.  
-- Intégrer des **fonctionnalités d’autonomie et de dialogue**.  
-- Documenter toutes les étapes du projet pour assurer sa **reproductibilité**.  
+- **Phase 1 (Début Septembre)** : Étude et conception
+Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](link.com).
+- **Phase 2 (Mi-Septembre à Mi-Octobre)** : Développement hardware & software
+Nous avons réalisé le developpement hardware du projet en 3 semaines et nous avons ensuite concentré nos efforts sur le développement des blocks individuels du software embarqué.
+- **Phase 3 (Décembre)** : Intégration et tests
+Nous avons intégrés et adaptés les différents blocks des capteurs et actionneurs dans le [code résultant](secondlink.com). 
+- **Phase 4  (Janvier)** : Présentation finale
+Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des [extraits vidéos](thirdlink.com) montrant le résultat de nos travaux.  
+
 
 ---
 ## Schéma de Principe
@@ -50,18 +55,5 @@ Ce dépôt est organisé de la manière suivante :
 - **Langages** : Python / C  
 - **Matériel** : STM32 / VL053 / LIDAR
 - **Fabrication** : JLCPCB / Imprimante 3D FDM / Fusion 360
-
----
-
-## 📅 Organisation
-
-- **Phase 1 (Début Septembre)** : Étude et conception
-Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](link.com).
-- **Phase 2 (Mi-Septembre à Mi-Octobre)** : Développement hardware & software
-Nous avons réalisé le developpement hardware du projet en 3 semaines et nous avons ensuite concentré nos efforts sur le développement des blocks individuels du software embarqué.
-- **Phase 3 (Décembre)** : Intégration et tests
-Nous avons intégrés et adaptés les différents blocks des capteurs et actionneurs dans le [code résultant](secondlink.com). 
-- **Phase 4  (Janvier)** : Présentation finale
-Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des [extraits vidéos](thirdlink.com) montrant le résultat de nos travaux.  
 
 
