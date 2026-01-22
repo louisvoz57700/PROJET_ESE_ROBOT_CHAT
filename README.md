@@ -39,7 +39,7 @@ Ce dépôt est organisé de la manière suivante :
 
 ---
 ## Schéma de Principe
-<img width="1336" height="904" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
+<img width="133" height="90" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
 
 ## Organigramme de décision
 <img width="1081" height="369" alt="Organigramme de decision(1)" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
@@ -55,7 +55,7 @@ Ce dépôt est organisé de la manière suivante :
 
 ## 📅 Organisation
 
-- **Phase 1 (Début Septembre)**: Étude et conception
+- **Phase 1 (Début Septembre)** : Étude et conception
 Nous avons étudié les possibilités et choisis d'adopter [deux solutions de pcb](link.com).
 - **Phase 2 (Mi-Septembre à Mi-Octobre)** : Développement hardware & software
 Nous avons réalisé le developpement hardware du projet en 3 semaines et nous avons ensuite concentré nos efforts sur le développement des blocks individuels du software embarqué.
