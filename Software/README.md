@@ -36,7 +36,7 @@ Hello Laurent Fiack from antonio, Louis, Kenny et thomas!
 
 C'est bien le message qu'on avait envoyé !
 
-### Partie FreeRtos
+### Partie FreeRTOS
 La section se trouve ici : [code](PCB_A/jeu_chat/PCB_BLE)
 
 #### Fonctionnement : 
@@ -68,6 +68,3 @@ mode chat :
 https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
 
 
-
-
-## PCB_B : version G431 + module bluetooth externe
