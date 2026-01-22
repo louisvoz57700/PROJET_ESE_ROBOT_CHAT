@@ -39,7 +39,7 @@ Ce dépôt est organisé de la manière suivante :
 
 ---
 ## Schéma de Principe
-<img width="1336/2" height="904" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
+<img width="1336" height="904" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
 
 ## Organigramme de décision
 <img width="1081" height="369" alt="Organigramme de decision(1)" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
