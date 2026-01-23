@@ -18,12 +18,10 @@ On se connecte sur notre carte :
 <img width="369" height="700" alt="image" src="https://github.com/user-attachments/assets/e325896c-31f6-43f3-a811-aec1771d1442" />
 
 puis on rejoins notre service : 
-
-![WhatsApp Image 2026-01-18 at 17 41 05 (1)](https://github.com/user-attachments/assets/b9da0ccb-70c2-45dc-b032-6d7ef8b4ab2d)
+<img width="369" height="700" alt="image" src="https://github.com/user-attachments/assets/905c3af9-00be-4e9c-b986-17ad6ea13e0d" />
 
 On regarde le message reçu :
-
-![WhatsApp Image 2026-01-18 at 17 40 56](https://github.com/user-attachments/assets/966d239f-08e3-4702-9761-caf4a4909d6f)
+<img width="369" height="700" alt="image" src="https://github.com/user-attachments/assets/966d239f-08e3-4702-9761-caf4a4909d6f" />
 
 La valeur hexadécimale affichée est : 
 
