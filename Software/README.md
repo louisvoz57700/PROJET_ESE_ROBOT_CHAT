@@ -47,7 +47,12 @@ Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionn
  * task_control.c : mode chat, définit la façon pour attraper la souris. (Mode souris ici fonctionne, est décrite dans task_FSM, on lui fait faire seulement un carré par manque de temps). (attr.priority   = BASE_PRIO + 5;)
  * task_sensor.c : Lidar + tof ( lidar : attr.priority   = BASE_PRIO + 3; et tof : attr.priority   = BASE_PRIO + 2;)
 
-#### Capteurs et actionneurs :
+
+## Organigramme de décision
+<img width="1081" height="369" alt="Organigramme de decision(1)" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
+
+
+#### Capteurs et actionneurs : 
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
 
 La logique de tous nos actionneurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
@@ -56,15 +61,9 @@ Notre odométrie et notre PID se trouvent dans le fichier suivant : [odométrie 
 Dans le même fichier, on y retrouvera 2 fonctions utiles à nos déplacements Robot_Translation et Robot_Rotation qui peuvent être appelées et qui nous servent pour la chasse ainsi que pour la fuite.
 
 Test du carré sur odométrie suffisante : 
-
-
 https://github.com/user-attachments/assets/7094cc9a-a563-437a-8e9e-69ce3a43d382
 
-
 mode chat : 
-
-
-
 https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
 
 
