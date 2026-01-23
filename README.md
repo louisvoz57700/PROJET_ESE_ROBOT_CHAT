@@ -27,7 +27,6 @@ Ce dépôt est organisé de la manière suivante :
 
 - `Software/` : Contient le **code source / firmware**, y compris les projets STM32CubeIDE, le code embarqué (C/C++) et les scripts utilitaires éventuels.
 
-
 ---
 
 ## 📅 Organisation
@@ -52,5 +51,7 @@ Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons 
 ---
 ## Résultats :
 
-### Vidéo du robot jouant en autonomie :
-https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
+### Vidéo finale du chat en jeu :
+https://github.com/user-attachments/assets/e0ab9da4-8b44-4d55-9d14-98a5d518202f
+
+
