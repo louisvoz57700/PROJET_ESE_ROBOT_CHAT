@@ -49,4 +49,8 @@ Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons 
 - **Matériel** : STM32 / VL053 / LIDAR
 - **Fabrication** : JLCPCB / Imprimante 3D FDM / Fusion 360
 
+---
+## Résultats :
 
+### Vidéo du robot jouant en autonomie :
+https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
