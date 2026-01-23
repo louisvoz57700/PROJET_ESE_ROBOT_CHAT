@@ -17,8 +17,6 @@ Une fois que c'est fait, on installe sur notre téléphone l'application ST BLE 
 On se connecte sur notre carte :
 <img width="369" height="700" alt="image" src="https://github.com/user-attachments/assets/e325896c-31f6-43f3-a811-aec1771d1442" />
 
-![WhatsApp Image 2026-01-18 at 17 41 05](https://github.com/user-attachments/assets/aea99bb4-5753-4f7f-946c-b81bd6db133d)
-
 puis on rejoins notre service : 
 
 ![WhatsApp Image 2026-01-18 at 17 41 05 (1)](https://github.com/user-attachments/assets/b9da0ccb-70c2-45dc-b032-6d7ef8b4ab2d)
