@@ -16,7 +16,7 @@ Notre code fonctionne avec FreeRTOS et nous avons décidé de le faire fonctionn
 ## Organigramme de décision
 <img width="1081" height="369" alt="Organigramme de decision" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
 
-Concernant la gestion du jeu en mode souris, par manque de temps nous avons du opter pour un simple carré montrat une pattern de fuite.
+Concernant la gestion du jeu en mode souris, par manque de temps nous avons du opter pour un simple carré constituant une pattern de fuite.
 
 ### Capteurs et actionneurs : 
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
