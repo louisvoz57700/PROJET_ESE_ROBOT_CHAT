@@ -41,10 +41,7 @@ Nous avons intégrés et adaptés les différents blocks des capteurs et actionn
 - **Phase 4  (Janvier)** : Présentation finale
 Malgré le dépqart en double-dipplome de la majorité de l'équipe, nous avons travaillé a obtenir des extraits vidéos montrant le résultat de nos travaux.  
 
-
-## Organigramme de décision
-<img width="1081" height="369" alt="Organigramme de decision(1)" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
---- 
+---
 
 ## 🛠️ Technologies utilisées (prévisionnel)
 
