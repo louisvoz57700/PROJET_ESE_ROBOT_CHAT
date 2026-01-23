@@ -5,7 +5,7 @@
 La section se trouve ici : [code](PCB_A/jeu_chat/PCB_BLE)
 
 #### Fonctionnement : 
-Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionner grâce à 4 tâches : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/tasks)
+Notre code fonctionne avec FreeRTOS et nous avons décidé de le faire fonctionner grâce à 4 tâches : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/tasks)
 
  * task_FSM.c : c'est notre machine à état.   (attr.priority   = BASE_PRIO + 4;)
  * task_comm.c : utilisé pour l'écran, l'écran passe de l'image d'une souris à celle d'un chat suivant le mode de jeu choisis. (attr.priority   = BASE_PRIO +  1;)
@@ -16,9 +16,13 @@ Notre code fonctionne avec FreeRtos et nous avons décidé de le faire fonctionn
 ## Organigramme de décision
 <img width="1081" height="369" alt="Organigramme de decision" src="https://github.com/user-attachments/assets/13309a05-b155-4094-a117-cbdac6cd5ec0" />
 
+Concernant la gestion du jeu en mode souris, par manque de temps nous avons du opter pour un simple carré montrat une pattern de fuite.
 
-#### Capteurs et actionneurs : 
+### Capteurs et actionneurs : 
 La logique de tous nos capteurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/capteurs)
+
+Vidéo du robot suivant une cible avec le lidar :
+https://github.com/user-attachments/assets/37d389ab-2c22-427e-961a-3d2abfaa119d
 
 La logique de tous nos actionneurs se retrouvent ici : [disponible ici](PCB_A/jeu_chat/PCB_BLE/Core/Src/actionneurs)
 
