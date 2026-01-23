@@ -28,7 +28,7 @@ Dans le même fichier, on y retrouvera 2 fonctions utiles à nos déplacements R
 Test du carré sur odométrie suffisante : 
 https://github.com/user-attachments/assets/7094cc9a-a563-437a-8e9e-69ce3a43d382
 
-
+--- 
 
 ### Partie Bluetooth
 La section Software/PCB_A/Preuve_BLE/BLE est la section de notre code de preuve de notre antenne Bluetooth intégrée à notre PCB. Tout fonctionne ! Notre code est ici :[code](PCB_A/Preuve_BLE/BLE)
