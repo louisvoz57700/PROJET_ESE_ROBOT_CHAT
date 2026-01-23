@@ -24,12 +24,8 @@ Les principaux composants intégrés sont :
   *ADXL343*, utilisé pour la détection des taps et des mouvements.
 
 ---
-
-<p align="center">
-  <img src="images/image.png" width="32%" />
-  <img src="images/image-1.png" width="32%" />
-  <img src="images/image-2.png" width="32%" />
-</p>
+## Schéma de Principe
+<img width="1336" height="904" alt="image" src="https://github.com/user-attachments/assets/7335ae36-fff2-46ec-bc82-de067b597700" />
 
 ---
 
@@ -55,3 +51,12 @@ Des **indicateurs 3,3 V et 5 V** permettent de vérifier rapidement le bon fonct
 ### Test points et conversion de tension
 - La **partie droite** regroupe les **points de test**, donnant accès aux signaux principaux pour le **débogage**.  
 - La **conversion de tension** est placée sur l’**autre face du PCB** (côté « chat-souris »), isolant les étages de puissance des circuits sensibles et améliorant la **lisibilité globale** de la carte.
+
+---
+## Réalisation :
+
+<p align="center">
+  <img src="images/image.png" width="32%" />
+  <img src="images/image-1.png" width="32%" />
+  <img src="images/image-2.png" width="32%" />
+</p>
