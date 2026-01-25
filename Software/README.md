@@ -70,3 +70,16 @@ Ce qui donne en (ASCII) :
 Hello Laurent Fiack from antonio, Louis, Kenny et thomas!
 
 C'est bien le message envoyé !
+
+### IHM
+
+L'utilisation du bluetooth nous permet de créer une Interface Homme-Machine (IHM) nous permettant de communiquer avec le robot depuis une machine. Pour cela nous avons utilisée une page web [appBLEv1.0](PCB_A/Software_bluetooth/appBLEv1.0.html) qui peut tirer à profit l'extention BLE de Chrome (à date de janvier 2026 Chrome est le seul navigateur où cette extention existe).
+
+![IHM](PCB_A/Software_bluetooth/IHM.png)
+
+Cette page html permet de se connecter au robot, d'envoyer des commandes (démarrer/arrêter, choisir le mode chat/souris) en utilisant la caractéristique écrire et de recevoir des informations (odometrie du robot et position du robot adverse) en utilisant la caractéristique notify.
+
+Pour utiliser cette page, il suffit de l'ouvrir dans Chrome. Avant de connecter la stm32, il bien indiquer l'uuid du service, vous pourrez retrouver cette information avec l'application ST BLE toolbox comme montré dans la section précédente ou sur PC avec le logiciel [Bluetooth LE Explorer](https://apps.microsoft.com/detail/9n0ztkf1qd98) de Microsoft. 
+La page web est faite de façon à ce que l'uuid du service et des caractéristiques soient modifiables et vous pouurez retrouver les uuids des services lors de la connexion.
+
+Le projet [ble_demo](PCB_A/ble_demo) est un exemple d'utilisation de l'interface bluetooth permettant une demonstration simple de l'IHM et des caractéristiques bluetooth implémentées.
